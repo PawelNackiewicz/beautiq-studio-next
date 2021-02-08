@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle } from 'styled-components'
+import Navbar from '../components/Navbar/Navbar'
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
+      <Navbar />
       <Component {...pageProps} />
     </>
   )
