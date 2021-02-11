@@ -1,6 +1,6 @@
-import type { AppProps } from 'next/app'
-import { createGlobalStyle } from 'styled-components'
-import Navbar from '../components/Navbar/Navbar'
+import type { AppProps } from 'next/app';
+import { createGlobalStyle } from 'styled-components';
+import Navbar from '../components/Navbar/Navbar';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
    font-weight: normal;
    margin: 0;
   }
-`
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

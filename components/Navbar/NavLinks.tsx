@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import Link from "next/link";
-import { Dispatch, SetStateAction } from "react";
+import styled from 'styled-components';
+import Link from 'next/link';
+import { Dispatch, SetStateAction } from 'react';
 
-const NavItem = styled(Link)`
+const NavItem = styled.a`
   text-decoration: none;
   color: #111;
   display: inline-block;
@@ -20,7 +20,7 @@ const NavItem = styled(Link)`
     left: 0;
     right: 0;
     width: 0;
-    content: ".";
+    content: '.';
     color: transparent;
     background: #b8987b;
     height: 1px;
@@ -45,13 +45,23 @@ type NavbarLinksProps = {
 
 const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
   return (
-    <div onClick={() => setNavigationOpen(false)}>
-      <NavItem href="/przedluzanie-rzes">PRZEDŁUŻANIE RZĘS</NavItem>
-      <NavItem href="/lifting-rzes">LIFTING RZĘS</NavItem>
-      <NavItem href="/stylizacja-brwi">STYLIZACJA BRWI</NavItem>
-      <NavItem href="/jak-dbac-o-rzesy">PIELĘGNACJA RZĘS</NavItem>
-      <NavItem href="/Natalia-Golomb">O MNIE</NavItem>
-    </div>
+    <>
+      <Link href="/przedluzanie-rzes">
+        <NavItem onClick={() => setNavigationOpen(false)}>PRZEDŁUŻANIE RZĘS</NavItem>
+      </Link>
+      <Link href="/lifting-rzes">
+        <NavItem onClick={() => setNavigationOpen(false)}>LIFTING RZĘS</NavItem>
+      </Link>
+      <Link href="/stylizacja-brwi">
+        <NavItem onClick={() => setNavigationOpen(false)}>STYLIZACJA BRWI</NavItem>
+      </Link>
+      <Link href="/jak-dbac-o-rzesy">
+        <NavItem onClick={() => setNavigationOpen(false)}>PIELĘGNACJA RZĘS</NavItem>
+      </Link>
+      <Link href="/Natalia-Golomb">
+        <NavItem onClick={() => setNavigationOpen(false)}>O MNIE</NavItem>
+      </Link>
+    </>
   );
 };
 

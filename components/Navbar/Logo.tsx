@@ -1,25 +1,30 @@
-import styled from 'styled-components'
-import Link from 'next/link'
-import { Dispatch, SetStateAction } from 'react'
+import styled from 'styled-components';
+import { Dispatch, SetStateAction } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const LogoWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
-`
+`;
 
 type LogoProps = {
-    setNavigationOpen: Dispatch<SetStateAction<boolean>>
-}
+  setNavigationOpen: Dispatch<SetStateAction<boolean>>;
+};
 
-const Logo = ({setNavigationOpen}: LogoProps) => {
+const Logo = ({ setNavigationOpen }: LogoProps) => {
   return (
-    <LogoWrap onClick={() => setNavigationOpen(false)}>
-        <Link href="/">
-            <img alt="logo"/>
-        </Link>
-    </LogoWrap>
-  )
-}
+    <Link href="/">
+      <Image
+        alt="logo"
+        src="/logo.png"
+        width="64"
+        height="40"
+        onClick={() => setNavigationOpen(false)}
+      />
+    </Link>
+  );
+};
 
-export default Logo
+export default Logo;

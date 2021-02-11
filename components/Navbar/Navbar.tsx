@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import NavbarLinks from './NavLinks'
-import Logo from './Logo'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import NavbarLinks from './NavLinks';
+import Logo from './Logo';
 
 type NavbarProps = {
-    isOpen: boolean
-}
+  isOpen: boolean;
+};
 
 const Navigation = styled.nav`
   height: 10vh;
@@ -51,7 +51,7 @@ const Navbox = styled.div<NavbarProps>`
     background-color: #f2eadf;
     transition: all 0.3s ease-in;
     top: 8vh;
-    left: ${({isOpen}) => (isOpen ? "-100%" : "0")};
+    left: ${({ isOpen }) => (isOpen ? '-100%' : '0')};
   }
 `;
 
@@ -62,48 +62,41 @@ const Hamburger = styled.div<NavbarProps>`
   transition: all 0.3s linear;
   align-self: center;
   position: relative;
-  transform: ${({isOpen}) => (isOpen ? "rotate(-45deg)" : "inherit")};
+  transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'inherit')};
   ::before,
   ::after {
     width: 30px;
     height: 3px;
     background-color: #111;
-    content: "";
+    content: '';
     position: absolute;
     transition: all 0.3s linear;
   }
   ::before {
-    transform: ${({isOpen}) =>
-      isOpen ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    transform: ${({ isOpen }) =>
+      isOpen ? 'rotate(-90deg) translate(-10px, 0px)' : 'rotate(0deg)'};
     top: -10px;
   }
   ::after {
-    opacity: ${({isOpen}) => (isOpen ? "0" : "1")};
-    transform: ${({isOpen}) => (isOpen ? "rotate(90deg) " : "rotate(0deg)")};
+    opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
+    transform: ${({ isOpen }) => (isOpen ? 'rotate(90deg) ' : 'rotate(0deg)')};
     top: 10px;
   }
 `;
 
 const Navbar = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
+  console.log(`navigationOpen: ${navigationOpen}`);
 
   return (
     <Navigation>
       <Logo setNavigationOpen={setNavigationOpen} />
-      <Toggle
-        onClick={() => setNavigationOpen(!navigationOpen)}
-      >
-        {navigationOpen ? <Hamburger isOpen={true} /> : <Hamburger isOpen={false} />}
+      <Toggle onClick={() => setNavigationOpen(!navigationOpen)}>
+        <Hamburger isOpen={navigationOpen} />
       </Toggle>
-      {navigationOpen ? (
-        <Navbox isOpen={false}>
-          <NavbarLinks setNavigationOpen={setNavigationOpen} />
-        </Navbox>
-      ) : (
-        <Navbox isOpen={true}>
-          <NavbarLinks setNavigationOpen={setNavigationOpen} />
-        </Navbox>
-      )}
+      <Navbox isOpen={navigationOpen}>
+        <NavbarLinks setNavigationOpen={setNavigationOpen} />
+      </Navbox>
     </Navigation>
   );
 };
