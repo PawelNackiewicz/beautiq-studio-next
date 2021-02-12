@@ -6,7 +6,8 @@ import Navbar from '../components/Navbar/Navbar';
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-    
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+
   html {
     box-sizing: border-box;
   }
@@ -17,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
    background-color:white;
-   font-family: Ubuntu,serif;
+   font-family: 'Crimson Pro', serif;
    font-style: normal;
    font-weight: normal;
    margin: 0;
