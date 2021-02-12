@@ -12,12 +12,12 @@ const Navigation = styled.nav`
   display: flex;
   position: relative;
   justify-content: space-between;
-  border-bottom: 2px solid #33333320;
+  border-bottom: .1rem solid black;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
-  background-color: #f2eadf;
+  background-color: white;
   @media (max-width: 1000px) {
     position: sticky;
     height: 8vh;
@@ -94,7 +94,7 @@ const Navbar = () => {
       <Toggle onClick={() => setNavigationOpen(!navigationOpen)}>
         <Hamburger isOpen={navigationOpen} />
       </Toggle>
-      <Navbox isOpen={navigationOpen}>
+      <Navbox isOpen={!navigationOpen}>
         <NavbarLinks setNavigationOpen={setNavigationOpen} />
       </Navbox>
     </Navigation>

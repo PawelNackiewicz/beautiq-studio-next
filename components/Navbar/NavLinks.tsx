@@ -14,6 +14,7 @@ const NavItem = styled.a`
   font-weight: bold;
   font-size: 17px;
   line-height: 21px;
+  cursor: pointer;
   :after {
     position: absolute;
     bottom: 0;

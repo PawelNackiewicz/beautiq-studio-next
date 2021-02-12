@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-   background-color: #F2EADF;
+   background-color:white;
    font-family: Ubuntu,serif;
    font-style: normal;
    font-weight: normal;
