@@ -8,7 +8,7 @@ const NavItem = styled.a`
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
-  transition: all 200ms ease-in;
+  transition: all 1400ms ease-in;
   position: relative;
   font-style: normal;
   font-weight: bold;
@@ -23,12 +23,12 @@ const NavItem = styled.a`
     width: 0;
     content: '.';
     color: transparent;
-    background: #b8987b;
+    background: #c4a747;
     height: 1px;
-    transition: all 0.4s ease-in;
+    transition: all 0.8s ease-in;
   }
   :hover {
-    color: #b8987b;
+    color: #c4a747;
     ::after {
       width: 100%;
     }

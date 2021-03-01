@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 
 const FooterContainer = styled.footer`
   width: 100%;
@@ -141,7 +142,7 @@ const NavItem = styled.a`
   }
 `;
 
-const Footer = () => {
+const Footer = React.memo(() => {
   return (
     <FooterContainer>
       <AddressContainer>
@@ -203,6 +204,6 @@ const Footer = () => {
       </CopyrightsContainer>
     </FooterContainer>
   );
-};
+});
 
 export default Footer;

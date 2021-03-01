@@ -43,7 +43,7 @@ const SocialMediaContainer = styled.div`
   }
 `
 
-const OfferImageContainer = styled.div`
+const OffersContainer = styled.div`
   display: grid;
   grid-template-rows: repeat(3, 1fr);
     
@@ -53,33 +53,65 @@ const OfferImageContainer = styled.div`
   }
 `
 
-const StyledOfferImage = styled.div`
-  width: 100%;
-  height: 100%;
-  max-width: 320px;
-  z-index: -1;
-  position: relative;
-  margin: 1rem auto;
+const StyledLink = styled.a`
+    position: relative;
+    top: 20px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 20px;
+    cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c4a747;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+
+  &:hover:before {
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    border: 2px solid #c4a747;
+    box-sizing: border-box;
+    
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+  &:hover:after {
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
 `
 
-const StyledImageOfferLabel = styled.div`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 210px;
-  height: 42px;
-  background: rgba(64, 44, 33, 0.85);
-  border-radius: 20px;
-  text-transform: uppercase;
-  color: white;
-  font-size: 18px;
+const OfferWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: .9;
-  z-index: 1;
 `
 
 export default function Home() {
@@ -100,27 +132,30 @@ export default function Home() {
           <a href="https://www.instagram.com/beautiq_studio_natalia_golomb/?hl=pl" target="_blank" rel="noreferrer">  <Image src="/icons/instagram.png" alt="instagram" width="30" height="30" /></a>
           <a href="https://www.linkedin.com/in/natalia-golomb/" target="_blank" rel="noreferrer">  <Image src="/icons/linkedin.png" alt="linkedin" width="30" height="30" /></a>
         </SocialMediaContainer>
-        <OfferImageContainer>
-          <Link href="/stylizacja-brwi">
-            <StyledOfferImage>
-              <StyledImageOfferLabel>
-                Stylizacja brwi</StyledImageOfferLabel>
-                <Image src="/eyelashExtensions.png" width="320" height="120" />
-            </StyledOfferImage>
-          </Link>
-          <Link href="/lifting-rzes">
-            <StyledOfferImage>
-              <StyledImageOfferLabel>Lifting rzęs</StyledImageOfferLabel>
-              <Image src="/lifting.png" width="320" height="120" />
-            </StyledOfferImage>
-          </Link>
-          <Link href="/przedluzanie-rzes">
-            <StyledOfferImage>
-              <StyledImageOfferLabel>Przedłużanie rzęs</StyledImageOfferLabel>
-              <Image src="/eyebrow.png" width="320" height="120" />
-            </StyledOfferImage>
-          </Link>
-        </OfferImageContainer>
+        <OffersContainer>
+          <OfferWrapper>
+            <Image src="/brwi.png" width="320" height="120" />
+              <Link href="/stylizacja-brwi" passHref>
+                <StyledLink>
+                    Stylizacja brwi
+                </StyledLink>
+              </Link>
+          </OfferWrapper>
+          <OfferWrapper>
+            <Image src="/lifting.png" width="320" height="120" />
+            <Link href="/lifting-rzes">
+                <StyledLink>Lifting rzęs</StyledLink>
+            </Link>
+          </OfferWrapper>
+          <OfferWrapper>
+            <Image src="/przedluzanie_rzes.png" width="320" height="120" />
+            <Link href="/przedluzanie-rzes">
+              <StyledLink>
+                Przedłużanie rzęs
+              </StyledLink>
+            </Link>
+          </OfferWrapper>
+        </OffersContainer>
         <FindMe />
       </MainContainer>
       </main>
