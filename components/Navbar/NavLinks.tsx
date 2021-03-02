@@ -62,6 +62,12 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
       <Link href="/Natalia-Golomb">
         <NavItem onClick={() => setNavigationOpen(false)}>O MNIE</NavItem>
       </Link>
+      <Link href="/Natalia-Golomb">
+        <NavItem onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItem>
+      </Link>
+      <Link href="/Natalia-Golomb">
+        <NavItem onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA PIELĘGNACYJNA</NavItem>
+      </Link>
     </>
   );
 };
