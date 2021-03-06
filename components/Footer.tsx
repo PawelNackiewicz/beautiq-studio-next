@@ -157,27 +157,27 @@ const Footer = React.memo(() => {
         </AddressWrapper>
       </AddressContainer>
       <SiteMapContainer>
-        <Link href="/">
+        <Link href="/" passHref>
           <NavItem>Cennik</NavItem>
         </Link>
-        <Link href="/">
+        <Link href="/" passHref>
           <NavItem>Kontakt</NavItem>
         </Link>
-        <Link href="/">
+        <Link href="/" passHref>
           <NavItem>O mnie</NavItem>
         </Link>
       </SiteMapContainer>
       <OfferContainer>
-        <Link href="/przedluzanie-rzes">
+        <Link href="/przedluzanie-rzes" passHref>
           <NavItem>Przedłużanie rzęs</NavItem>
         </Link>
-        <Link href="/lifting-rzes">
+        <Link href="/lifting-rzes" passHref>
           <NavItem>Lifting rzęs</NavItem>
         </Link>
-        <Link href="/stylizacja-brwi">
+        <Link href="/stylizacja-brwi" passHref>
           <NavItem>Stylizacja brwi</NavItem>
         </Link>
-        <Link href="/jak-dbac-o-rzesy">
+        <Link href="/jak-dbac-o-rzesy" passHref>
           <NavItem>Pielęgnacja rzęs</NavItem>
         </Link>
       </OfferContainer>

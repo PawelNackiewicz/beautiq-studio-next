@@ -183,13 +183,13 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
             </OfferWrapper>
             <OfferWrapper>
               <Image src="/lifting.png" width="320" height="120" />
-              <Link href="/lifting-rzes">
+              <Link href="/lifting-rzes" passHref>
                 <StyledLink>Lifting rzęs</StyledLink>
               </Link>
             </OfferWrapper>
             <OfferWrapper>
               <Image src="/przedluzanie_rzes.png" width="320" height="120" />
-              <Link href="/przedluzanie-rzes">
+              <Link href="/przedluzanie-rzes" passHref>
                 <StyledLink>Przedłużanie rzęs</StyledLink>
               </Link>
             </OfferWrapper>

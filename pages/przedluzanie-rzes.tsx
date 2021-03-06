@@ -110,17 +110,17 @@ function PrzedluzanieRzes() {
       <StyledSection>
         Zapraszam serdecznie na taką konsultację.</StyledSection>
     </StyledArticle>
-    <StyledLink href="/lifting-rzes">
+    <StyledLink href="/lifting-rzes" passHref>
       <StyledImageOfferLabel>
         Lifting rzęs
       </StyledImageOfferLabel>
     </StyledLink>
-    <StyledLink href="/stylizacja-brwi">
+    <StyledLink href="/stylizacja-brwi" passHref>
       <StyledImageOfferLabel>
         Stylizacja brwi
       </StyledImageOfferLabel>
     </StyledLink>
-    <StyledLink href="/jak-dbac-o-rzesy">
+    <StyledLink href="/jak-dbac-o-rzesy" passHref>
       <StyledImageOfferLabel>
         Jak dbać o rzęsy
       </StyledImageOfferLabel>

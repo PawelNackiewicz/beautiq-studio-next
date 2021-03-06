@@ -134,17 +134,17 @@ function StylizacjaBrwi() {
             rzadkie. Tak więc to nie jest tylko chwilowy efekt koloryzacji, ale też cudowny zabieg regeneracyjny.
           </StyledSection>
         </StyledArticle>
-        <StyledLink href="/lifting-rzes">
+        <StyledLink href="/lifting-rzes" passHref>
           <StyledImageOfferLabel>
             Lifting rzęs
           </StyledImageOfferLabel>
         </StyledLink>
-        <StyledLink href="/przedluzanie-rzes">
+        <StyledLink href="/przedluzanie-rzes" passHref>
           <StyledImageOfferLabel>
             Przedłużanie rzęs
           </StyledImageOfferLabel>
         </StyledLink>
-        <StyledLink href="/jak-dbac-o-rzesy">
+        <StyledLink href="/jak-dbac-o-rzesy" passHref>
           <StyledImageOfferLabel>
             Jak dbać o rzęsy
           </StyledImageOfferLabel>

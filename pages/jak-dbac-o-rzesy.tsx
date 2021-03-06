@@ -142,17 +142,17 @@ function JakDbacORzesy() {
     <StyledLogoContainer>
      <Image src="/mark.png" width="48" height="84" />
     </StyledLogoContainer>
-    <StyledLink href="/przedluzanie-rzes">
+    <StyledLink href="/przedluzanie-rzes" passHref>
       <StyledImageOfferLabel>
         Przedłużanie rzęs
       </StyledImageOfferLabel>
     </StyledLink>
-    <StyledLink href="/lifting-rzes">
+    <StyledLink href="/lifting-rzes" passHref>
       <StyledImageOfferLabel>
         Lifting rzęs
       </StyledImageOfferLabel>
     </StyledLink>
-    <StyledLink href="/stylizacja-brwi">
+    <StyledLink href="/stylizacja-brwi" passHref>
       <StyledImageOfferLabel>
         Stylizacja brwi
       </StyledImageOfferLabel>

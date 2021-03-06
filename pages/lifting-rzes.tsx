@@ -132,17 +132,17 @@ function LiftingRzes() {
     <StyledLogoContainer>
      <Image src="/mark.png" width="48" height="84" />
     </StyledLogoContainer>
-    <StyledLink href="/przedluzanie-rzes">
+    <StyledLink href="/przedluzanie-rzes" passHref>
       <StyledImageOfferLabel>
         Przedłużanie rzęs
       </StyledImageOfferLabel>
     </StyledLink>
-    <StyledLink href="/stylizacja-brwi">
+    <StyledLink href="/stylizacja-brwi" passHref>
       <StyledImageOfferLabel>
         Stylizacja brwi
       </StyledImageOfferLabel>
     </StyledLink>
-    <StyledLink href="/jak-dbac-o-rzesy">
+    <StyledLink href="/jak-dbac-o-rzesy" passHref>
       <StyledImageOfferLabel>
         Jak dbać o rzęsy
       </StyledImageOfferLabel>
