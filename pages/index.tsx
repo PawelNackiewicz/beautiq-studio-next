@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 import FindMe from '../components/FindMe';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import { ImageSlider } from '../components/Slider/ImageSlider';
+import { InferGetStaticPropsType } from 'next';
 
 const MainContainer = styled.main`
   max-width: 1000px;
@@ -116,13 +116,30 @@ const OfferWrapper = styled.div`
   align-items: center;
 `;
 
-const InstagramWrapper = styled.div`
-  margin-top: 40px;
-  background-color: #f7a1f2;
-  height: 200px;
-`;
 
-export default function Home() {
+export type InstagramMedia = {
+  readonly id: string;
+  readonly media_url: string;
+  readonly media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
+};
+
+export async function getStaticProps() {
+  const response = await fetch(
+    `https://graph.instagram.com/17841435177986860/media?fields=id,media_url,media_type&access_token=${process.env.INSTAGRAM_TOKEN}`,
+  );
+  const responseAsJson = await response.json();
+  const images: InstagramMedia[] = responseAsJson.data.filter(
+    (image: InstagramMedia) => image.media_type === 'IMAGE',
+  );
+
+  return {
+    props: {
+      images,
+    },
+  };
+}
+
+export default function Home({ images }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
       <Head>
@@ -177,53 +194,7 @@ export default function Home() {
               </Link>
             </OfferWrapper>
           </OffersContainer>
-          <InstagramWrapper>
-            <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={5} visibleSlides={3}>
-              <Slider>
-                <Slide index={0}>
-                  <Image
-                    src="https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/141178628_265134118302288_3039269350794455955_n.jpg?_nc_cat=109&ccb=3&_nc_sid=8ae9d6&_nc_ohc=vYggcMtF9m0AX8QL8xC&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=b05777bf8c045164cff0fe108022e2af&oe=60671C12"
-                    width="200"
-                    height="200"
-                  />
-                </Slide>
-                <Slide index={1}>
-                  <Image
-                    src="https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/141178628_265134118302288_3039269350794455955_n.jpg?_nc_cat=109&ccb=3&_nc_sid=8ae9d6&_nc_ohc=vYggcMtF9m0AX8QL8xC&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=b05777bf8c045164cff0fe108022e2af&oe=60671C12"
-                    width="200"
-                    height="200"
-                  />
-                </Slide>
-                <Slide index={2}>
-                  <Image
-                    src="https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/140522855_166874968558711_320024573641518822_n.jpg?_nc_cat=107&ccb=3&_nc_sid=8ae9d6&_nc_ohc=x9PzELLvdRcAX_cekCk&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=2db79d42d13fb19a418a98df4c525d17&oe=60671CBF"
-                    width="200"
-                    height="200"
-                  />
-                </Slide>
-                <Slide index={3}>
-                  <Image
-                    src="https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/141178628_265134118302288_3039269350794455955_n.jpg?_nc_cat=109&ccb=3&_nc_sid=8ae9d6&_nc_ohc=vYggcMtF9m0AX8QL8xC&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=b05777bf8c045164cff0fe108022e2af&oe=60671C12"
-                    width="200"
-                    height="200"
-                  />
-                </Slide>
-                <Slide index={4}>
-                  <Image
-                    src="https://scontent-frt3-2.cdninstagram.com/v/t51.29350-15/152862704_422522055677894_2307790436837529638_n.jpg?_nc_cat=103&ccb=3&_nc_sid=8ae9d6&_nc_ohc=iqA5-f5Q4W0AX9amXiD&_nc_ht=scontent-frt3-2.cdninstagram.com&oh=03369fd5bd12f6c70a76e73e4762f999&oe=60680946"
-                    width="200"
-                    height="200"
-                  />
-                </Slide>
-              </Slider>
-            </CarouselProvider>
-            {/* <img src='https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/141178628_265134118302288_3039269350794455955_n.jpg?_nc_cat=109&ccb=3&_nc_sid=8ae9d6&_nc_ohc=vYggcMtF9m0AX8QL8xC&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=b05777bf8c045164cff0fe108022e2af&oe=60671C12'/>
-            <img src='https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/141178628_265134118302288_3039269350794455955_n.jpg?_nc_cat=109&ccb=3&_nc_sid=8ae9d6&_nc_ohc=vYggcMtF9m0AX8QL8xC&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=b05777bf8c045164cff0fe108022e2af&oe=60671C12'/>
-            <img src='https://scontent-frt3-1.cdninstagram.com/v/t51.29350-15/141178628_265134118302288_3039269350794455955_n.jpg?_nc_cat=109&ccb=3&_nc_sid=8ae9d6&_nc_ohc=vYggcMtF9m0AX8QL8xC&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=b05777bf8c045164cff0fe108022e2af&oe=60671C12'/> */}
-            {/* <Image src="/mark.png" width="48" height="84" alt='1'/>
-            <Image src="/mark.png" width="48" height="84" alt='2'/>
-            <Image src="/mark.png" width="48" height="84" alt='3'/> */}
-          </InstagramWrapper>
+          <ImageSlider images={images} />
           <FindMe />
         </MainContainer>
       </main>

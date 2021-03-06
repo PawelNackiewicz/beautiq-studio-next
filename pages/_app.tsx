@@ -2,6 +2,8 @@ import type { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar/Navbar';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
