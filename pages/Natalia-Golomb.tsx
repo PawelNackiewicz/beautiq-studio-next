@@ -5,35 +5,35 @@ import Footer from '../components/Footer';
 const AboutMePageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
+  display: flex;
 `;
 
-const StyledLogoContainer = styled.div`
+const StyledImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  height: 500px;
+  width: 500px;
 `;
 
 const StyledArticle = styled.article`
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
-  font-size: 19px;
-  padding: 1rem;
+  font-size: 16px;
+  padding: .5rem;
 `;
 
 const StyledSection = styled.section`
-  line-height: 170%;
+  line-height: 160%;
   margin-bottom: 1rem;
 `;
 
 function NataliaGolomb() {
   return (
     <AboutMePageContainer>
-      <Image
-        alt="Natalia Golomb"
-        src="/Natalia_Golomb_stylistka_rzes.png"
-        width="1000"
-        height="577"
-      />
+      <StyledImageContainer>
+        <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
+      </StyledImageContainer>
       <StyledArticle>
         <StyledSection>
           Nazywam się Natalia Golomb i od 2016 roku spełniam swoje zawodowe marzenia. To właśnie
@@ -57,9 +57,6 @@ function NataliaGolomb() {
           kompletną wiedzę, jak wydobywać z kobiet to, co w nich najlepsze.{' '}
         </StyledSection>
       </StyledArticle>
-      <StyledLogoContainer>
-        <Image alt="logo" src="/mark.png" width="48" height="84" />
-      </StyledLogoContainer>
     </AboutMePageContainer>
   );
 }
