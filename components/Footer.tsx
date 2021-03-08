@@ -50,14 +50,6 @@ const AddressWrapper = styled.div`
   }
 `;
 
-const LogoWrapper = styled.div`
-  margin-top: 0.5rem;
-  display: none;
-  @media (min-width: 600px) {
-    display: inline;
-  }
-`;
-
 const StudioName = styled.span`
   font-weight: normal;
   @media (min-width: 600px) {
@@ -151,34 +143,28 @@ const Footer = React.memo(() => {
           <span>Częstochowska 15</span>
           <span>46-040 Ozimek</span>
           <span>533 571 754</span>
-          <LogoWrapper>
-            <Image alt="logo" src="/logo.png" width="64" height="40" />
-          </LogoWrapper>
         </AddressWrapper>
       </AddressContainer>
       <SiteMapContainer>
         <Link href="/" passHref>
-          <NavItem>Cennik</NavItem>
-        </Link>
-        <Link href="/" passHref>
-          <NavItem>Kontakt</NavItem>
+          <NavItem>Szkolenia</NavItem>
         </Link>
         <Link href="/" passHref>
           <NavItem>O mnie</NavItem>
         </Link>
+        <Link href="/" passHref>
+          <NavItem>Cennik</NavItem>
+        </Link>
       </SiteMapContainer>
       <OfferContainer>
         <Link href="/przedluzanie-rzes" passHref>
-          <NavItem>Przedłużanie rzęs</NavItem>
-        </Link>
-        <Link href="/lifting-rzes" passHref>
-          <NavItem>Lifting rzęs</NavItem>
+          <NavItem>Rzęsy</NavItem>
         </Link>
         <Link href="/stylizacja-brwi" passHref>
-          <NavItem>Stylizacja brwi</NavItem>
+          <NavItem>Brwi</NavItem>
         </Link>
         <Link href="/jak-dbac-o-rzesy" passHref>
-          <NavItem>Pielęgnacja rzęs</NavItem>
+          <NavItem>Zabiegi</NavItem>
         </Link>
       </OfferContainer>
       <SocialMediaContainer>

@@ -48,25 +48,19 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
   return (
     <>
       <Link href="/przedluzanie-rzes" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>PRZEDŁUŻANIE RZĘS</NavItem>
+        <NavItem onClick={() => setNavigationOpen(false)}>RZĘSY</NavItem>
       </Link>
       <Link href="/lifting-rzes" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>LIFTING RZĘS</NavItem>
-      </Link>
-      <Link href="/stylizacja-brwi" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>STYLIZACJA BRWI</NavItem>
-      </Link>
-      <Link href="/jak-dbac-o-rzesy" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>PIELĘGNACJA RZĘS</NavItem>
+        <NavItem onClick={() => setNavigationOpen(false)}>BRWI</NavItem>
       </Link>
       <Link href="/Natalia-Golomb" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>O MNIE</NavItem>
+        <NavItem onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA PIELĘGNACYJNA</NavItem>
       </Link>
       <Link href="/Natalia-Golomb" passHref>
         <NavItem onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItem>
       </Link>
       <Link href="/Natalia-Golomb" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA PIELĘGNACYJNA</NavItem>
+        <NavItem onClick={() => setNavigationOpen(false)}>O MNIE</NavItem>
       </Link>
     </>
   );
