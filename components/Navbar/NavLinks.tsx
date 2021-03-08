@@ -1,11 +1,35 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
+import Dropdown from './Dropdown';
 
-const NavItem = styled.a`
+const StyledList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+const NavItem = styled.li`
+  display: flex;
+  align-items: center;
+  height: 80px;
+`;
+
+const NavItemLink = styled.a`
   text-decoration: none;
   color: #111;
-  display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
   transition: all 1400ms ease-in;
@@ -38,31 +62,60 @@ const NavItem = styled.a`
     font-size: 1.5rem;
     z-index: 6;
   }
-`;
+`
 
 type NavbarLinksProps = {
   setNavigationOpen: Dispatch<SetStateAction<boolean>>;
 };
 
 const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
+  const [dropdown, setDropdown] = useState(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
   return (
-    <>
-      <Link href="/przedluzanie-rzes" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>RZĘSY</NavItem>
-      </Link>
-      <Link href="/lifting-rzes" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>BRWI</NavItem>
-      </Link>
-      <Link href="/Natalia-Golomb" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA PIELĘGNACYJNA</NavItem>
-      </Link>
-      <Link href="/Natalia-Golomb" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItem>
-      </Link>
-      <Link href="/Natalia-Golomb" passHref>
-        <NavItem onClick={() => setNavigationOpen(false)}>O MNIE</NavItem>
-      </Link>
-    </>
+    <StyledList>
+      <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+        <Link href="/przedluzanie-rzes" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>RZĘSY</NavItemLink>
+        </Link>
+        {dropdown && <Dropdown />}
+      </NavItem>
+      <NavItem>
+        <Link href="/lifting-rzes" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>BRWI</NavItemLink>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href="/Natalia-Golomb" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA PIELĘGNACYJNA</NavItemLink>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href="/Natalia-Golomb" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItemLink>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href="/Natalia-Golomb" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>O MNIE</NavItemLink>
+        </Link>
+      </NavItem>
+    </StyledList>
   );
 };
 

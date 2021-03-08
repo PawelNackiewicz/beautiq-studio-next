@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import NavbarLinks from './NavLinks';
+import Link from 'next/link';
+import Dropdown from './Dropdown';
 import Logo from './Logo';
-
-type NavbarProps = {
-  isOpen: boolean;
-};
+import NavbarLinks from './NavLinks';
 
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
   position: relative;
   justify-content: space-between;
-  border-bottom: .1rem solid black;
+  border-bottom: 0.1rem solid black;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
@@ -48,7 +46,7 @@ const Navbox = styled.div<NavbarProps>`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #f2eadf;
+    background-color: white;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${({ isOpen }) => (isOpen ? '-100%' : '0')};
@@ -84,9 +82,12 @@ const Hamburger = styled.div<NavbarProps>`
   }
 `;
 
+type NavbarProps = {
+  isOpen: boolean;
+};
+
 const Navbar = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
-  console.log(`navigationOpen: ${navigationOpen}`);
 
   return (
     <Navigation>
