@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Dispatch, SetStateAction } from 'react';
 import styled from 'styled-components';
 
 const StyledUl = styled.ul`
@@ -8,6 +9,13 @@ const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
   border: solid 1px black;
+
+  @media (max-width: 1000px) {
+    top: 83px;
+    width: 100vw;
+    position: static;
+    border: none;
+  }
 `;
 
 const StyledLi = styled.li`
@@ -41,12 +49,17 @@ const MenuItems = [
   },
 ];
 
-const Dropdown = () => {
+
+type DropdownProps = {
+  setNavigationOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+const Dropdown = ({ setNavigationOpen }: DropdownProps) => {
   return (
     <StyledUl>
       {MenuItems.map((item, index) => {
         return (
-          <StyledLi key={index}>
+          <StyledLi key={index} onClick={() => setNavigationOpen(false)}>
             <Link href={item.path} passHref>
               <StyledLink>{item.title}</StyledLink>
             </Link>

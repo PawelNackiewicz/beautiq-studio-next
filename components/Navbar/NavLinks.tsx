@@ -11,8 +11,9 @@ const StyledList = styled.ul`
   text-align: center;
   width: 70vw;
   justify-content: end;
+  padding: 0;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +26,11 @@ const NavItem = styled.li`
   display: flex;
   align-items: center;
   height: 80px;
+
+  @media (max-width: 1000px) {
+    height: auto;
+    flex-direction: column;
+  }
 `;
 
 const NavItemLink = styled.a`
@@ -57,12 +63,13 @@ const NavItemLink = styled.a`
       width: 100%;
     }
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     padding: 20px 0;
     font-size: 1.5rem;
     z-index: 6;
+    display: flex;
   }
-`
+`;
 
 type NavbarLinksProps = {
   setNavigationOpen: Dispatch<SetStateAction<boolean>>;
@@ -72,7 +79,7 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
   const [dropdown, setDropdown] = useState(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1000) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -80,20 +87,18 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
+    setDropdown(false);
+  };
+
+  const onClick = () => {
+    setDropdown(!dropdown);
   };
 
   return (
     <StyledList>
-      <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-        <Link href="/przedluzanie-rzes" passHref>
-          <NavItemLink onClick={() => setNavigationOpen(false)}>RZĘSY</NavItemLink>
-        </Link>
-        {dropdown && <Dropdown />}
+      <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
+        <NavItemLink>RZĘSY</NavItemLink>
+        {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
       </NavItem>
       <NavItem>
         <Link href="/lifting-rzes" passHref>
@@ -102,7 +107,7 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
       </NavItem>
       <NavItem>
         <Link href="/Natalia-Golomb" passHref>
-          <NavItemLink onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA PIELĘGNACYJNA</NavItemLink>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA</NavItemLink>
         </Link>
       </NavItem>
       <NavItem>
