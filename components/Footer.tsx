@@ -149,10 +149,10 @@ const Footer = React.memo(() => {
         <Link href="/" passHref>
           <NavItem>Szkolenia</NavItem>
         </Link>
-        <Link href="/" passHref>
+        <Link href="/Natalia-Golomb" passHref>
           <NavItem>O mnie</NavItem>
         </Link>
-        <Link href="/" passHref>
+        <Link href="/cennik" passHref>
           <NavItem>Cennik</NavItem>
         </Link>
       </SiteMapContainer>
