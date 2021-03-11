@@ -124,11 +124,15 @@ export type InstagramMedia = {
   readonly media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
 };
 
+type Response = {
+  readonly data: InstagramMedia []; 
+}
+
 export async function getStaticProps() {
   const response = await fetch(
     `https://graph.instagram.com/17841435177986860/media?fields=id,media_url,media_type&access_token=${process.env.INSTAGRAM_TOKEN}`,
   );
-  const responseAsJson = await response.json();
+  const responseAsJson: Response = await response.json();
   const images: InstagramMedia[] = responseAsJson.data.filter(
     (image: InstagramMedia) => image.media_type === 'IMAGE',
   );
