@@ -49,32 +49,71 @@ const StyledDescriptionHeader = styled.h6`
   line-height: 150%;
 `
 
-const StyledImageOfferLabel = styled.div`
-  margin: 1rem;
+const StyledLink = styled.a`
+  width: 300px;
+  text-align: center;
+  margin: 5px 0;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 210px;
-  height: 42px;
-  background: rgba(64, 44, 33, 0.85);
-  border-radius: 20px;
+  padding: 15px 30px;
   text-transform: uppercase;
-  color: white;
-  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c4a747;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+
+  &:hover:before {
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #c4a747;
+    box-sizing: border-box;
+
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+  &:hover:after {
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+`;
+
+const StyledLinkContainer = styled.div`
+  margin: auto;
+  max-width: 600px;
+  height: 160px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: .9;
-  z-index: 1;
-`
-
-const StyledLink = styled(Link)`
-  :hover {
-    text-decoration: none;
-  }
-`
-
+  flex-direction: column;
+`;
 
 const ImageConteiner = styled.div`
   width: 64%;
@@ -85,7 +124,7 @@ function LiftingRzes() {
   return (
     <LiftingPageContainer>
     <ImageConteiner>
-     //img
+    <Image src="/lifting-rzes.png" width="1000" height="700" />
     </ImageConteiner>
     <StyledArticle>
       <StyledHeader>Lifting rzęs</StyledHeader>
@@ -132,21 +171,14 @@ function LiftingRzes() {
     <StyledLogoContainer>
      <Image src="/mark.png" width="48" height="84" />
     </StyledLogoContainer>
-    <StyledLink href="/przedluzanie-rzes" passHref>
-      <StyledImageOfferLabel>
-        Przedłużanie rzęs
-      </StyledImageOfferLabel>
-    </StyledLink>
-    <StyledLink href="/stylizacja-brwi" passHref>
-      <StyledImageOfferLabel>
-        Stylizacja brwi
-      </StyledImageOfferLabel>
-    </StyledLink>
-    <StyledLink href="/jak-dbac-o-rzesy" passHref>
-      <StyledImageOfferLabel>
-        Jak dbać o rzęsy
-      </StyledImageOfferLabel>
-    </StyledLink>
+    <StyledLinkContainer>
+        <Link href="/przedluzanie-rzes" passHref>
+          <StyledLink>Przedłużanie rzęs</StyledLink>
+        </Link>
+        <Link href="/jak-dbac-o-rzesy" passHref>
+          <StyledLink>Jak dbać o rzęsy</StyledLink>
+        </Link>
+      </StyledLinkContainer>
   </LiftingPageContainer>
   );
 }

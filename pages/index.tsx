@@ -114,6 +114,7 @@ const OfferWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 210px;
 `;
 
 
@@ -176,19 +177,19 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
           </SocialMediaContainer>
           <OffersContainer>
             <OfferWrapper>
-              <Image src="/brwi.png" width="320" height="120" />
+              <Image src="/homePage/brwi.png" width="320" height="120" />
               <Link href="/stylizacja-brwi" passHref>
                 <StyledLink>Stylizacja brwi</StyledLink>
               </Link>
             </OfferWrapper>
             <OfferWrapper>
-              <Image src="/lifting.png" width="320" height="120" />
+              <Image src="/homePage/lifting.png" width="320" height="120" />
               <Link href="/lifting-rzes" passHref>
                 <StyledLink>Lifting rzęs</StyledLink>
               </Link>
             </OfferWrapper>
             <OfferWrapper>
-              <Image src="/przedluzanie_rzes.png" width="320" height="120" />
+              <Image src="/homePage/przedluzanie_rzes.png" width="320" height="120" />
               <Link href="/przedluzanie-rzes" passHref>
                 <StyledLink>Przedłużanie rzęs</StyledLink>
               </Link>
