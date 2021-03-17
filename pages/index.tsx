@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 import FindMe from '../components/FindMe';
+import AboutMe from '../components/AboutMe';
+import Coaching from '../components/Coaching';
 import { ImageSlider } from '../components/Slider/ImageSlider';
 import { InferGetStaticPropsType } from 'next';
 
@@ -137,9 +139,6 @@ export async function getStaticProps() {
     (image: InstagramMedia) => image.media_type === 'IMAGE',
   );
 
-  console.log(`images: ${JSON.stringify(images)}`);
-  console.log(`response: ${JSON.stringify(response)}`);
-
   return {
     props: {
       images,
@@ -202,6 +201,8 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               </Link>
             </OfferWrapper>
           </OffersContainer>
+          <AboutMe />
+          <Coaching />
           <ImageSlider images={images} />
           <FindMe />
         </MainContainer>

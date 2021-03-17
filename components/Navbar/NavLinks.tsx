@@ -101,7 +101,7 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
       </NavItem>
       <NavItem>
-        <Link href="/lifting-rzes" passHref>
+        <Link href="/stylizacja-brwi" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>BRWI</NavItemLink>
         </Link>
       </NavItem>
@@ -111,7 +111,7 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="/Natalia-Golomb" passHref>
+        <Link href="/szkolenia" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItemLink>
         </Link>
       </NavItem>
