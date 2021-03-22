@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/link';
 import Image from 'next/image';
 
 const EyebrowPageContainer = styled.div`
@@ -41,7 +40,7 @@ const StyledLogoContainer = styled.div`
   margin-bottom: 2rem;
 `
 
-const StyledDescriptionHeader = styled.h6`
+const StyledDescriptionHeader = styled.p`
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -49,44 +48,11 @@ const StyledDescriptionHeader = styled.h6`
   line-height: 150%;
 `
 
-const StyledImageOfferLabel = styled.div`
-  margin: 1rem;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 210px;
-  height: 42px;
-  background: rgba(64, 44, 33, 0.85);
-  border-radius: 20px;
-  text-transform: uppercase;
-  color: white;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: .9;
-  z-index: 1;
-`
-
-const StyledLink = styled(Link)`
-  :hover {
-    text-decoration: none;
-  }
-`
-
-const CarouselConteiner = styled.div`
-  width: 64%;
-  margin: auto;
-`
-
 function StylizacjaBrwi() {
   return (
     <EyebrowPageContainer>
-      //image
+      <Image src="/homePage/brwi.png" width="1000" height="400" />
       <StyledArticle>
-          <StyledHeader>Brow henna</StyledHeader>
-          <StyledHeader>Henna pudrowa</StyledHeader>
           <StyledHeader>Stylizacja brwi</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
           <StyledSection>
@@ -134,21 +100,6 @@ function StylizacjaBrwi() {
             rzadkie. Tak więc to nie jest tylko chwilowy efekt koloryzacji, ale też cudowny zabieg regeneracyjny.
           </StyledSection>
         </StyledArticle>
-        <StyledLink href="/lifting-rzes" passHref>
-          <StyledImageOfferLabel>
-            Lifting rzęs
-          </StyledImageOfferLabel>
-        </StyledLink>
-        <StyledLink href="/przedluzanie-rzes" passHref>
-          <StyledImageOfferLabel>
-            Przedłużanie rzęs
-          </StyledImageOfferLabel>
-        </StyledLink>
-        <StyledLink href="/jak-dbac-o-rzesy" passHref>
-          <StyledImageOfferLabel>
-            Jak dbać o rzęsy
-          </StyledImageOfferLabel>
-        </StyledLink>
     </EyebrowPageContainer>
   );
 }

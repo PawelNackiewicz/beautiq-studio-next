@@ -17,7 +17,7 @@ const StyledHeader = styled.h4`
   margin: 0.3rem;
 `;
 
-const StyledSectionHeader = styled.h5`
+const StyledSectionHeader = styled.p`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
