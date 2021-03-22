@@ -115,21 +115,12 @@ const StyledLinkContainer = styled.div`
   flex-direction: column;
 `;
 
-const ImageConteiner = styled.div`
-  width: 64%;
-  margin: auto;
-`
-
 function LiftingRzes() {
   return (
     <LiftingPageContainer>
-    <ImageConteiner>
     <Image src="/lifting-rzes.png" width="1000" height="700" />
-    </ImageConteiner>
     <StyledArticle>
       <StyledHeader>Lifting rzęs</StyledHeader>
-      <StyledHeader>Laminacja rzęs</StyledHeader>
-      <StyledHeader>Lash filler</StyledHeader>
       <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
       <StyledSection>Dla osób, które cenią sobie naturalność i wygodę oraz nie chcą się ograniczać.
         Dla osób które posiadają proste, grube i oporne rzęsy.
