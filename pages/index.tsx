@@ -139,8 +139,6 @@ export async function getStaticProps() {
     (image: InstagramMedia) => image.media_type === 'IMAGE',
   );
 
-  console.log(JSON.stringify(images));
-
   return {
     props: {
       images,

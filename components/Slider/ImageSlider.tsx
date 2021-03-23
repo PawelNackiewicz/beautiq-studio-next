@@ -20,6 +20,15 @@ const InstagramLink = styled.a`
   font-weight: 700;
 `;
 
+const InstagramImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  height: 460px;
+  width: 460px;
+  background-size: contain;
+  background-repeat: no-repeat; 
+`;
+
 type ImageSliderProps = {
   images: InstagramMedia[];
 };
@@ -38,7 +47,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           <Slider>
             {images.map(({ media_url, id }, index) => (
               <Slide index={index} key={id}>
-                <img src={media_url} width="460" height="460" />
+                <InstagramImage src={media_url} />
               </Slide>
             ))}
           </Slider>
