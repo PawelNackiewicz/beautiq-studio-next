@@ -38,7 +38,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           <Slider>
             {images.map(({ media_url, id }, index) => (
               <Slide index={index} key={id}>
-                <Image src={media_url} width="460" height="460" />
+                <img src={media_url} width="460" height="460" />
               </Slide>
             ))}
           </Slider>
