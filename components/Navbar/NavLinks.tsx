@@ -6,7 +6,6 @@ import Dropdown from './Dropdown';
 const StyledList = styled.ul`
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 70vw;

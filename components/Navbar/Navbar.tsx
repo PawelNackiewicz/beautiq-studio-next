@@ -16,13 +16,20 @@ const Navigation = styled.nav`
   z-index: 2;
   align-self: center;
   background-color: white;
-  @media (max-width: 1000px) {
+
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    padding: 0 3vw;
+  }
+
+  @media (min-width: 1200px) {
     position: sticky;
-    height: 12vh;
+    height: 10vh;
     top: 0;
     left: 0;
     right: 0;
   }
+
+  
 `;
 
 const Toggle = styled.div`
@@ -48,7 +55,7 @@ const Navbox = styled.div<NavbarProps>`
     padding-top: 2vh;
     background-color: white;
     transition: all 0.3s ease-in;
-    top: 12vh;
+    top: 10vh;
     left: ${({ isOpen }) => (isOpen ? '-100%' : '0')};
   }
 `;

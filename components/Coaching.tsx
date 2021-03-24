@@ -6,6 +6,10 @@ const StyledContainer = styled.div`
   display: flex;
   margin: 1rem 0;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const ArticleContainer = styled.div`
@@ -16,6 +20,15 @@ const ArticleContainer = styled.div`
   width: 50%;
   height: 100%;
   padding: 0 3rem;
+
+  p {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 1000px) {
+    width: 100%
+  }
 `;
 
 const StyledLink = styled.a`
@@ -77,7 +90,7 @@ const Coaching = () => {
   return (
     <StyledContainer>
       <ArticleContainer>
-        <h4>szkolenia</h4>
+        <p>szkolenia</p>
         <article>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -88,7 +101,7 @@ const Coaching = () => {
           PageMaker including versions of Lorem Ipsum.
 
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the industry's standard dummy text eve
+          been the industry's standard dummy text eve &#10084;
         </article>
         <Link href="szkolenia" passHref>
           <StyledLink>czytaj więcej</StyledLink>

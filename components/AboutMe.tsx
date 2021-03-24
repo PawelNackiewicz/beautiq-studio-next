@@ -6,6 +6,10 @@ const StyledContainer = styled.div`
   display: flex;
   margin: 1rem 0;
   justify-content: space-between;
+  
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 const ArticleContainer = styled.div`
@@ -16,6 +20,16 @@ const ArticleContainer = styled.div`
   width: 50%;
   height: 100%;
   padding: 0 3rem;
+
+  p {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
 `;
 
 const StyledLink = styled.a`
@@ -78,7 +92,7 @@ const AboutMe = () => {
     <StyledContainer>
       <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
       <ArticleContainer>
-        <h4>o mnie</h4>
+        <p>o mnie</p>
         <article>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -89,7 +103,7 @@ const AboutMe = () => {
           PageMaker including versions of Lorem Ipsum.
 
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the industry's standard dummy text eve
+          been the industry's standard dummy text eve &#10084;
         </article>
         <Link href="Natalia-Golomb" passHref>
           <StyledLink>czytaj więcej</StyledLink>

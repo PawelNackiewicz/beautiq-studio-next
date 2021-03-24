@@ -51,7 +51,12 @@ const OffersContainer = styled.div`
   display: grid;
   grid-template-rows: repeat(4, 1fr);
 
-  @media (min-width: 1050px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
