@@ -88,7 +88,7 @@ const Coaching = () => {
           PageMaker including versions of Lorem Ipsum.
 
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the industry's standard dummy text eve
+          been the industry's standard dummy text eve &#10084;
         </article>
         <Link href="szkolenia" passHref>
           <StyledLink>czytaj więcej</StyledLink>
