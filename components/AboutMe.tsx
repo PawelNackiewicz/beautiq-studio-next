@@ -5,6 +5,7 @@ import Link from 'next/link';
 const StyledContainer = styled.div`
   display: flex;
   margin: 1rem 0;
+  justify-content: space-between;
 `;
 
 const ArticleContainer = styled.div`

@@ -9,7 +9,7 @@ import { ImageSlider } from '../components/Slider/ImageSlider';
 import { InferGetStaticPropsType } from 'next';
 
 const MainContainer = styled.main`
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 `;
 
@@ -49,10 +49,10 @@ const SocialMediaContainer = styled.div`
 
 const OffersContainer = styled.div`
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 
   @media (min-width: 1050px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
 `;
@@ -60,13 +60,19 @@ const OffersContainer = styled.div`
 const StyledLink = styled.a`
   position: relative;
   top: 20px;
-  padding: 15px 30px;
+  height: 60px;
+  width: 200px;
+  padding: 10px 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(0, 0, 0);
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:before {
     content: '';
@@ -157,7 +163,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
       <main>
         <MainContainer>
           <HeaderFotoContainer>
-            <Image src="/background.png" width="1000" height="380" />
+            <Image src="/background.png" width="1200" height="380" />
           </HeaderFotoContainer>
           <SocialMediaContainer>
             <a
@@ -183,21 +189,27 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
           </SocialMediaContainer>
           <OffersContainer>
             <OfferWrapper>
-              <Image src="/homePage/brwi.png" width="320" height="120" />
+              <Image src="/homePage/brwi.png" width="280" height="120" />
               <Link href="/stylizacja-brwi" passHref>
                 <StyledLink>Stylizacja brwi</StyledLink>
               </Link>
             </OfferWrapper>
             <OfferWrapper>
-              <Image src="/homePage/lifting.png" width="320" height="120" />
+              <Image src="/homePage/lifting.png" width="280" height="120" />
               <Link href="/lifting-rzes" passHref>
-                <StyledLink>Lifting rzęs</StyledLink>
+                <StyledLink>Kosmetologia</StyledLink>
               </Link>
             </OfferWrapper>
             <OfferWrapper>
-              <Image src="/homePage/przedluzanie_rzes.png" width="320" height="120" />
+              <Image src="/homePage/przedluzanie_rzes.png" width="280" height="120" />
               <Link href="/przedluzanie-rzes" passHref>
                 <StyledLink>Przedłużanie rzęs</StyledLink>
+              </Link>
+            </OfferWrapper>
+            <OfferWrapper>
+              <Image src="/homePage/przedluzanie_rzes.png" width="280" height="120" />
+              <Link href="/przedluzanie-rzes" passHref>
+                <StyledLink>Makijaż permanentny</StyledLink>
               </Link>
             </OfferWrapper>
           </OffersContainer>

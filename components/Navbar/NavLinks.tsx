@@ -5,7 +5,7 @@ import Dropdown from './Dropdown';
 
 const StyledList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -99,6 +99,11 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
       <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
         <NavItemLink>RZĘSY</NavItemLink>
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
+      </NavItem>
+      <NavItem>
+        <Link href="/stylizacja-brwi" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>MAKIJAŻ PERMAMENTNY</NavItemLink>
+        </Link>
       </NavItem>
       <NavItem>
         <Link href="/stylizacja-brwi" passHref>
