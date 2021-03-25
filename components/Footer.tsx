@@ -41,7 +41,7 @@ const AddressWrapper = styled.div`
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  margin: 0.7rem 0.5rem;
+  margin: 0.7rem 0.5rem 0;
 
   @media (min-width: 600px) {
     font-size: 14px;
@@ -52,34 +52,18 @@ const AddressWrapper = styled.div`
 
 const StudioName = styled.span`
   font-weight: normal;
+  font-weight: bold;
+  font-size: 16px;
   @media (min-width: 600px) {
-    font-weight: bold;
     font-size: 18px;
     line-height: 21px;
   }
 `;
 
-const SocialMediaContainer = styled.nav`
+const SocialMediaContainer = styled.div`
   grid-area: socialMedia;
   display: flex;
   flex-direction: column;
-
-  a {
-    text-decoration: none;
-    font-family: Ubuntu, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: black;
-    margin: 0.5rem;
-    img {
-      display: none;
-    }
-    p {
-      display: inline;
-    }
-  }
 
   @media (min-width: 600px) {
     a {
@@ -93,16 +77,38 @@ const SocialMediaContainer = styled.nav`
   }
 `;
 
-const OfferContainer = styled.nav`
+const StyledLink = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Ubuntu, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  margin: 0.5rem;
+  img {
+    display: none;
+  }
+  p {
+    margin-left: 0.4rem;
+    display: inline;
+  }
+`;
+
+const OfferContainer = styled.div`
   grid-area: offer;
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
 `;
 
-const SiteMapContainer = styled.nav`
+const SiteMapContainer = styled.div`
   grid-area: siteMap;
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
 `;
 const CopyrightsContainer = styled.div`
   grid-area: copyrights;
@@ -163,27 +169,38 @@ const Footer = React.memo(() => {
         <Link href="/stylizacja-brwi" passHref>
           <NavItem>Brwi</NavItem>
         </Link>
+        <Link href="/stylizacja-brwi" passHref>
+          <NavItem>Makijaż Permamentny</NavItem>
+        </Link>
         <Link href="/jak-dbac-o-rzesy" passHref>
           <NavItem>Zabiegi</NavItem>
         </Link>
       </OfferContainer>
       <SocialMediaContainer>
-        <a href="https://www.facebook.com/beautiq.studio.ozimek/" target="_blank" rel="noreferrer">
+        <StyledLink
+          href="https://www.facebook.com/beautiq.studio.ozimek/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image src="/icons/facebook.png" alt="facebook" width="30" height="30" />
           <p>Facebook</p>
-        </a>
-        <a
+        </StyledLink>
+        <StyledLink
           href="https://www.instagram.com/beautiq_studio_natalia_golomb/?hl=pl"
           target="_blank"
           rel="noreferrer"
         >
           <Image src="/icons/instagram.png" alt="instagram" width="30" height="30" />
           <p>Instagram</p>
-        </a>
-        <a href="https://www.linkedin.com/in/natalia-golomb/" target="_blank" rel="noreferrer">
+        </StyledLink>
+        <StyledLink
+          href="https://www.linkedin.com/in/natalia-golomb/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image src="/icons/linkedin.png" alt="linkedin" width="30" height="30" />
           <p>LinkedIn</p>
-        </a>
+        </StyledLink>
       </SocialMediaContainer>
       <CopyrightsContainer>
         <span>Copyrights BeautiQ Studio</span>

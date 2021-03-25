@@ -28,8 +28,6 @@ const Navigation = styled.nav`
     left: 0;
     right: 0;
   }
-
-  
 `;
 
 const Toggle = styled.div`

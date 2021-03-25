@@ -6,6 +6,10 @@ const AboutMePageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
   display: flex;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledImageContainer = styled.div`
@@ -20,7 +24,7 @@ const StyledArticle = styled.article`
   max-width: 500px;
   margin: auto;
   font-size: 16px;
-  padding: .5rem;
+  padding: 0.5rem;
 `;
 
 const StyledSection = styled.section`
@@ -31,9 +35,7 @@ const StyledSection = styled.section`
 function NataliaGolomb() {
   return (
     <AboutMePageContainer>
-      <StyledImageContainer>
-        <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
-      </StyledImageContainer>
+      <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
       <StyledArticle>
         <StyledSection>
           Nazywam się Natalia Golomb i od 2016 roku spełniam swoje zawodowe marzenia. To właśnie
