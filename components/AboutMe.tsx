@@ -18,7 +18,6 @@ const ArticleContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 100%;
   padding: 0 3rem;
 
   p {
@@ -90,7 +89,7 @@ const StyledLink = styled.a`
 const AboutMe = () => {
   return (
     <StyledContainer>
-      <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
+      <Image alt="Natalia Golomb" src="/o_mnie.png" width="500" height="625" />
       <ArticleContainer>
         <p>o mnie</p>
         <article>

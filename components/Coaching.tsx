@@ -18,7 +18,6 @@ const ArticleContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 100%;
   padding: 0 3rem;
 
   p {
@@ -107,7 +106,7 @@ const Coaching = () => {
           <StyledLink>czytaj więcej</StyledLink>
         </Link>
       </ArticleContainer>
-      <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
+      <Image alt="szkolenia" src="/szkolenia.png" width="500" height="750" />
     </StyledContainer>
   );
 };

@@ -15,7 +15,7 @@ const Navigation = styled.nav`
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
-  background-color: white;
+  background-color: #F2F2F2;
 
   @media (min-width: 1000px) and (max-width: 1200px) {
     padding: 0 3vw;
@@ -51,7 +51,7 @@ const Navbox = styled.div<NavbarProps>`
     width: 100%;
     justify-content: flex-start;
     padding-top: 2vh;
-    background-color: white;
+    background-color: #F2F2F2;
     transition: all 0.3s ease-in;
     top: 10vh;
     left: ${({ isOpen }) => (isOpen ? '-100%' : '0')};

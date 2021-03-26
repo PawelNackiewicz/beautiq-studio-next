@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-   background-color:white;
+   background-color:#F2F2F2;
    font-family: 'Crimson Pro', serif;
    font-style: normal;
    font-weight: normal;

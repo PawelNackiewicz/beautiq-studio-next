@@ -100,7 +100,7 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
       </NavItem>
       <NavItem>
-        <Link href="/stylizacja-brwi" passHref>
+        <Link href="/makijaz-permanentny" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>MAKIJAŻ PERMAMENTNY</NavItemLink>
         </Link>
       </NavItem>
@@ -110,7 +110,7 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="/Natalia-Golomb" passHref>
+        <Link href="/kosmetologia" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA</NavItemLink>
         </Link>
       </NavItem>

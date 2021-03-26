@@ -6,18 +6,11 @@ const AboutMePageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
   display: flex;
+  padding: 1rem 0;
 
   @media (max-width: 1000px) {
     flex-direction: column;
   }
-`;
-
-const StyledImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  height: 500px;
-  width: 500px;
 `;
 
 const StyledArticle = styled.article`

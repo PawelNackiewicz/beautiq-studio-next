@@ -169,11 +169,11 @@ const Footer = React.memo(() => {
         <Link href="/stylizacja-brwi" passHref>
           <NavItem>Brwi</NavItem>
         </Link>
-        <Link href="/stylizacja-brwi" passHref>
+        <Link href="/makijaz-permanentny" passHref>
           <NavItem>Makijaż Permamentny</NavItem>
         </Link>
-        <Link href="/jak-dbac-o-rzesy" passHref>
-          <NavItem>Zabiegi</NavItem>
+        <Link href="/kosmetologia" passHref>
+          <NavItem>Kosmetologia</NavItem>
         </Link>
       </OfferContainer>
       <SocialMediaContainer>

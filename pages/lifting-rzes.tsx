@@ -5,6 +5,7 @@ import Image from 'next/image';
 const LiftingPageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
+  padding: 1rem 0;
 `
 
 const StyledHeader = styled.h4`

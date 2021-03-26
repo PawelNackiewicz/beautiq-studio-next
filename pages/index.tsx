@@ -161,14 +161,14 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
   return (
     <div>
       <Head>
-        <title>BeautiQ Studio</title>
+        <title>BeautiQ Studio - Natalia Golomb</title>
         <link rel="icon" href="/mark.png" />
       </Head>
 
       <main>
         <MainContainer>
           <HeaderFotoContainer>
-            <Image src="/background.png" width="1200" height="380" />
+            <Image src="/background_clean.png" width="1200" height="183" />
           </HeaderFotoContainer>
           <SocialMediaContainer>
             <a
@@ -201,7 +201,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
             </OfferWrapper>
             <OfferWrapper>
               <Image src="/homePage/lifting.png" width="280" height="120" />
-              <Link href="/lifting-rzes" passHref>
+              <Link href="/kosmetologia" passHref>
                 <StyledLink>Kosmetologia</StyledLink>
               </Link>
             </OfferWrapper>
@@ -213,7 +213,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
             </OfferWrapper>
             <OfferWrapper>
               <Image src="/homePage/przedluzanie_rzes.png" width="280" height="120" />
-              <Link href="/przedluzanie-rzes" passHref>
+              <Link href="/makijaz-permanentny" passHref>
                 <StyledLink>Makijaż permanentny</StyledLink>
               </Link>
             </OfferWrapper>
