@@ -1,4 +1,4 @@
-## DEPLOYED ON https://beautiq-studio-next-4kdkfcvon-beautiq-studio.vercel.app/
+## DEPLOYED ON https://beautiq-studio-next-theta.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
