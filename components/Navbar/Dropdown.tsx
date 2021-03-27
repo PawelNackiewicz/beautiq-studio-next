@@ -9,6 +9,7 @@ const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
   border: solid 1px black;
+  background: #F2F2F2;
 
   @media (max-width: 1000px) {
     top: 83px;
@@ -16,10 +17,6 @@ const StyledUl = styled.ul`
     position: static;
     border: none;
   }
-`;
-
-const StyledLi = styled.li`
-  background: white;
 `;
 
 const StyledLink = styled.a`
@@ -59,11 +56,11 @@ const Dropdown = ({ setNavigationOpen }: DropdownProps) => {
     <StyledUl>
       {MenuItems.map((item, index) => {
         return (
-          <StyledLi key={index} onClick={() => setNavigationOpen(false)}>
+          <li key={index} onClick={() => setNavigationOpen(false)}>
             <Link href={item.path} passHref>
               <StyledLink>{item.title}</StyledLink>
             </Link>
-          </StyledLi>
+          </li>
         );
       })}
     </StyledUl>
