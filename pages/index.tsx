@@ -130,7 +130,6 @@ const OfferWrapper = styled.div`
   height: 210px;
 `;
 
-
 export type InstagramMedia = {
   readonly id: string;
   readonly media_url: string;
@@ -138,8 +137,8 @@ export type InstagramMedia = {
 };
 
 type Response = {
-  readonly data: InstagramMedia []; 
-}
+  readonly data: InstagramMedia[];
+};
 
 export async function getStaticProps() {
   const response = await fetch(
@@ -163,6 +162,13 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
       <Head>
         <title>BeautiQ Studio - Natalia Golomb</title>
         <link rel="icon" href="/mark.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff"></meta>
       </Head>
 
       <main>
