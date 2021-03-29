@@ -44,14 +44,12 @@ const AddressWrapper = styled.div`
   margin: 0.7rem 0.5rem 0;
 
   @media (min-width: 600px) {
-    font-size: 14px;
     line-height: 21px;
     margin: 0.5rem;
   }
 `;
 
 const StudioName = styled.span`
-  font-weight: normal;
   font-weight: bold;
   font-size: 16px;
   @media (min-width: 600px) {
@@ -78,6 +76,18 @@ const SocialMediaContainer = styled.div`
 `;
 
 const StyledLink = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Ubuntu, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+`;
+
+const StyledSocialLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -152,9 +162,9 @@ const Footer = React.memo(() => {
         </AddressWrapper>
       </AddressContainer>
       <SiteMapContainer>
-        <Link href="/" passHref>
+        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
           <NavItem>Szkolenia</NavItem>
-        </Link>
+        </StyledLink>
         <Link href="/Natalia-Golomb" passHref>
           <NavItem>O mnie</NavItem>
         </Link>
@@ -177,30 +187,30 @@ const Footer = React.memo(() => {
         </Link>
       </OfferContainer>
       <SocialMediaContainer>
-        <StyledLink
+        <StyledSocialLink
           href="https://www.facebook.com/beautiq.studio.ozimek/"
           target="_blank"
           rel="noreferrer"
         >
           <Image src="/icons/facebook.png" alt="facebook" width="30" height="30" />
           <p>Facebook</p>
-        </StyledLink>
-        <StyledLink
+        </StyledSocialLink>
+        <StyledSocialLink
           href="https://www.instagram.com/beautiq_studio_natalia_golomb/?hl=pl"
           target="_blank"
           rel="noreferrer"
         >
           <Image src="/icons/instagram.png" alt="instagram" width="30" height="30" />
           <p>Instagram</p>
-        </StyledLink>
-        <StyledLink
+        </StyledSocialLink>
+        <StyledSocialLink
           href="https://www.linkedin.com/in/natalia-golomb/"
           target="_blank"
           rel="noreferrer"
         >
           <Image src="/icons/linkedin.png" alt="linkedin" width="30" height="30" />
           <p>LinkedIn</p>
-        </StyledLink>
+        </StyledSocialLink>
       </SocialMediaContainer>
       <CopyrightsContainer>
         <span>Copyrights BeautiQ Studio</span>

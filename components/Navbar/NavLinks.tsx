@@ -70,6 +70,18 @@ const NavItemLink = styled.a`
   }
 `;
 
+const StyledLink = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Ubuntu, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+`;
+
 type NavbarLinksProps = {
   setNavigationOpen: Dispatch<SetStateAction<boolean>>;
 };
@@ -115,9 +127,9 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="/szkolenia" passHref>
+        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
           <NavItemLink onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItemLink>
-        </Link>
+        </StyledLink>
       </NavItem>
       <NavItem>
         <Link href="/Natalia-Golomb" passHref>
