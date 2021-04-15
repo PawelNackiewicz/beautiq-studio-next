@@ -16,6 +16,7 @@ const StyledHeader = styled.h4`
   font-size: 36px;
   line-height: 150%;
   margin: 0.3rem;
+  text-transform: uppercase;
 `;
 
 const StyledSectionHeader = styled.p`

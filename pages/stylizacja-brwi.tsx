@@ -15,6 +15,7 @@ const StyledHeader = styled.h4`
   font-size: 36px;
   line-height: 150%;
   margin: .3rem;
+  text-transform: uppercase;
 `
 
 const StyledStep = styled.p`

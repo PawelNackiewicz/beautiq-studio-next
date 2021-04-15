@@ -89,7 +89,7 @@ const StyledLink = styled.a`
 const AboutMe = () => {
   return (
     <StyledContainer>
-      <Image alt="Natalia Golomb" src="/o_mnie.png" width="500" height="625" />
+      <Image alt="Natalia Golomb" src="/NG.png" width="500" height="750" />
       <ArticleContainer>
         <p>o mnie</p>
         <article>
