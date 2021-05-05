@@ -6,7 +6,7 @@ const StyledContainer = styled.div`
   display: flex;
   margin: 1rem 0;
   justify-content: space-between;
-  
+
   @media (max-width: 1000px) {
     flex-direction: column;
   }
@@ -89,20 +89,14 @@ const StyledLink = styled.a`
 const AboutMe = () => {
   return (
     <StyledContainer>
-      <Image alt="Natalia Golomb" src="/NG.png" width="500" height="750" />
+      <Image alt="Natalia Golomb" src="/Natalia-Golomb.jpg" width="500" height="750" />
       <ArticleContainer>
         <p>o mnie</p>
         <article>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting, remaining essentially
-          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the industry's standard dummy text eve &#10084;
+          Cześć! Nazywam się Natalia Golomb i jestem właścicielką BEAUTIQ Studio w Ozimku. To co
+          sprawia mi największą satysfakcję na codzień - są uśmiechy moich klientek - kiedy patrzą na
+          siebie i widzą efekty mojej pracy. Co może być większą nagrodą za moją pracę? :-) Jestem
+          kosmetologiem, stylistką rzęs i brwi, instruktorem oraz linergistką. &#10084;
         </article>
         <Link href="Natalia-Golomb" passHref>
           <StyledLink>czytaj więcej</StyledLink>

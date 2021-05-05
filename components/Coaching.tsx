@@ -95,13 +95,17 @@ const Coaching = () => {
       <ArticleContainer>
         <p>szkolenia</p>
         <article>
-          Prowadzę profesjonalne szkolenia z różnych metod przedłużania rzęs w ramach współpracy z firmą Rarity. Szkolenia te skierowane są dla całego województwa opolskiego... &#10084;
+          Jak zostać stylistką rzęs? Jak nauczyć się przedłużać rzęsy? Chciałabyś zdobyć nowy zawód?
+          Szukasz pracy dodatkowej? A może już jesteś w branży beauty i chciałabyś zdobyć nowe
+          kwalifikacje? A może sama jesteś klientką i chciałabyś spróbować być po tej drugiej
+          stronie? Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego
+          oraz efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
         </article>
         <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
           <StyledLinkItem>czytaj więcej</StyledLinkItem>
         </StyledLink>
       </ArticleContainer>
-      <Image alt="szkolenia" src="/szk.png" width="500" height="750" />
+      <Image alt="szkolenia" src="/szkolenia-opolskie.png" width="500" height="750" />
     </StyledContainer>
   );
 };

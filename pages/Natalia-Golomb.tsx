@@ -28,28 +28,33 @@ const StyledSection = styled.section`
 function NataliaGolomb() {
   return (
     <AboutMePageContainer>
-      <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="500" height="500" />
+      <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="530" height="800" />
       <StyledArticle>
         <StyledSection>
-          Nazywam się Natalia Golomb i od 2016 roku spełniam swoje zawodowe marzenia. To właśnie
-          wtedy rozpoczęła się moja przygoda ze światem rzęs i brwi. Wszystko zaczęło się od mojej
-          pierwszej wizyty u stylistki rzęs. Piękny gabinet, dobra kawa, kojąca muzyka… i magia
-          niczym z filmu. Magia ta jednak różniła się tym, że czarodziejka – stylistka rzęs –
-          zamiast różdżki używała pęsety. Od tej pory zaciekawiłam się w czym tkwi tajemnica
-          rzęsowych czarów. Już prawie 3 lata uszczęśliwiam nowym, czarującym wyglądem moje Klientki
-          z okolic Opola.
+          Cześć! Nazywam się Natalia Golomb i jestem właścicielką BEAUTIQ Studio w Ozimku. To co
+          sprawia mi największą satysfakcję na codzień - są uśmiechy moich klientek - kiedy patrzą na
+          siebie i widzą efekty mojej pracy. Co może być większą nagrodą za moją pracę? :-) Jestem
+          kosmetologiem, stylistką rzęs i brwi, instruktorem oraz linergistką.
         </StyledSection>
         <StyledSection>
-          Jestem pierwszą stylistka rzęs w Ozimku oraz specjalizuję się w architekturze brwi. Bardzo
-          kocham swoją pracę i z fascynacją podchodzę do każdej Klientki. Jestem w stanie wczuć się
-          w oczekiwania Klientki oraz dopasować odpowiednie metody do jej oczekiwań. Kobieca uroda
-          to coś niezwykłego, a ja czerpię ogromną radość z podkreślenia kobiecego piękna.{' '}
+          Ukończyłam Wyższą Szkołę Fizjoterapii we Wrocławiu z tytułem kosmetologa. Zdobywając
+          odpowiednie umiejętności aby z pełną świadomością i starannością dbać o skóry moich
+          klientek. W mojej ofercie znajdziesz zabiegi dla każdego typu skóry.
         </StyledSection>
         <StyledSection>
-          Ciągle doskonalę swoje umiejętności na specjalistycznych szkoleniach oraz aktualizuję
-          swoją wiedzę na temat nowych trendów w dziedzinie stylizacji rzęs oraz brwi. Na co dzień
-          studiuję kosmetologię na Wyższej Szkole Fizjoterapii we Wrocławiu, ponieważ chcę mieć
-          kompletną wiedzę, jak wydobywać z kobiet to, co w nich najlepsze.{' '}
+          Tak naprawdę to stylizacja rzęs pokazała mi, że studia kosmetologiczne to moja droga.
+          Stylizacją oprawy oka zajmuję się od 2015 roku. Zabieg przedłużania rzęs nie ma przede mną
+          tajemnic - to sprawiło, że zostałam wyłącznym instruktorem Rarity Academy w województwie
+          opolskim.
+        </StyledSection>
+        <StyledSection>
+          Jako instruktor prowadzę szkolenia z wszystkich metod stylizacji rzęs. Jestem również
+          linergistką. Co to znaczy? Zajmuję się makijażem permanentnym brwi. PMU to już wisienka na
+          torcie moich usług.
+        </StyledSection>
+        <StyledSection>
+          Dlaczego tak bardzo pokochałam oprawę oka? Potrafi ona odmienić nasze spojrzenia,
+          podkreślić urodę i naprawdę - poczuć się pewniejsza siebie.
         </StyledSection>
       </StyledArticle>
     </AboutMePageContainer>
