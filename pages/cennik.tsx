@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NextSeo } from 'next-seo';
 
 const PriceListWrapper = styled.div`
   max-width: 800px;
@@ -55,6 +56,10 @@ const PriceListTitle = styled.h4`
 function Cennik() {
   return (
     <PriceListWrapper>
+       <NextSeo
+      title="Cennik"
+      description="Oferta - BeautiQ Studio - Natalia Golomb"
+    />
       <PriceListTitle id="cennik">Cennik</PriceListTitle>
       <StyledOfferName>Przedłużanie i zagęszczenie rzęs</StyledOfferName>
       <StyledTable>

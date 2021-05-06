@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
+import React from 'react';
+import { NextSeo } from 'next-seo';
 
 const EyelashExtensionsPageContainer = styled.div`
   max-width: 1000px;
@@ -116,7 +118,8 @@ const StyledLinkContainer = styled.div`
 function PrzedluzanieRzes() {
   return (
     <EyelashExtensionsPageContainer>
-      <Image src="/przedluzanie-rzes.png" width="1000" height="700" />
+      <NextSeo title="Przedłużanie rzęs - Ozimek" description="stylizacja rzęs - ozimek" />
+      <Image src="/przedluzanie-rzes.png" width="1000" height="700" alt="przedłużanie rzęs" />
       <StyledArticle>
         <StyledHeader>Przedłużanie rzęs</StyledHeader>
         <StyledSectionHeader>Metoda 1:1</StyledSectionHeader>

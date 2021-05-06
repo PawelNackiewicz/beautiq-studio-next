@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 const AboutMePageContainer = styled.div`
   max-width: 1000px;
@@ -27,6 +28,9 @@ const StyledSection = styled.section`
 function NataliaGolomb() {
   return (
     <AboutMePageContainer>
+       <NextSeo
+        title="Stylistka brwi i rzęs w Ozimku" description="Najlepsza stylistka rzęs i brwi w Ozimku koło Opola"
+      />
       <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="530" height="800" />
       <StyledArticle>
         <StyledSection>

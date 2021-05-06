@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 const PageContainer = styled.div`
   max-width: 1200px;
@@ -141,12 +142,16 @@ function JakDbacORzesy() {
 
   return (
     <PageContainer>
+       <NextSeo
+      title="Jak dbać o rzęsy"
+      description="skuteczna pielęgnacja rzęs"
+    />
       <ImageContainer>
-        <Image src="/jak-dbac-o-rzesy.png" width="600" height="750" />
+        <Image src="/jak-dbac-o-rzesy.png" width="600" height="750" alt='jak dbać o rzęsy'/>
         {isMobileView && (
           <>
-            <Image src="/jak-dbac-o-rzesy-2.png" width="600" height="750" />
-            <Image src="/jak-dbac-o-rzesy-3.png" width="600" height="750" />
+            <Image src="/jak-dbac-o-rzesy-2.png" width="600" height="750" alt='jak dbać o rzęsy'/>
+            <Image src="/jak-dbac-o-rzesy-3.png" width="600" height="750" alt='jak pielęgnować rzęsy'/>
           </>
         )}
       </ImageContainer>

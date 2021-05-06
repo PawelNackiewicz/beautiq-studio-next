@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 const LiftingPageContainer = styled.div`
   max-width: 1000px;
@@ -120,7 +121,11 @@ const StyledLinkContainer = styled.div`
 function LiftingRzes() {
   return (
     <LiftingPageContainer>
-    <Image src="/lifting-rzes.png" width="1000" height="700" />
+       <NextSeo
+        title="Lifting rzęs - Ozimek"
+        description="laminacja rzęs"
+      />
+    <Image src="/lifting-rzes.png" width="1000" height="700" alt='lifting rzęs'/>
     <StyledArticle>
       <StyledHeader>Lifting rzęs</StyledHeader>
       <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>

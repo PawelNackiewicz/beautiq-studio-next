@@ -7,6 +7,7 @@ import AboutMe from '../components/AboutMe';
 import Coaching from '../components/Coaching';
 import { ImageSlider } from '../components/Slider/ImageSlider';
 import { InferGetStaticPropsType } from 'next';
+import { NextSeo } from 'next-seo';
 
 const MainContainer = styled.main`
   max-width: 1200px;
@@ -173,8 +174,9 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
 
       <main>
         <MainContainer>
+          <NextSeo title="Strona główna" description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy. Makijaż permamentny - Ozimek, okolice Opola" />
           <HeaderFotoContainer>
-            <Image src="/background_clean.png" width="1200" height="183" />
+            <Image src="/background_clean.png" width="1200" height="183" alt="beautiq studio - Ozimek, okolice Opola"/>
           </HeaderFotoContainer>
           <SocialMediaContainer>
             <a
@@ -183,7 +185,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               rel="noreferrer"
             >
               {' '}
-              <Image src="/icons/facebook.png" alt="facebook" width="30" height="30" />
+              <Image src="/icons/facebook.png" alt="facebook.com/beautiq.studio.ozimek" width="30" height="30" />
             </a>
             <a
               href="https://www.instagram.com/beautiq_studio_natalia_golomb/?hl=pl"
@@ -191,11 +193,11 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               rel="noreferrer"
             >
               {' '}
-              <Image src="/icons/instagram.png" alt="instagram" width="30" height="30" />
+              <Image src="/icons/instagram.png" alt="https://www.instagram.com/beautiq_studio_natalia_golomb" width="30" height="30" />
             </a>
             <a href="https://www.linkedin.com/in/natalia-golomb/" target="_blank" rel="noreferrer">
               {' '}
-              <Image src="/icons/linkedin.png" alt="linkedin" width="30" height="30" />
+              <Image src="/icons/linkedin.png" alt="linkedin.com/in/natalia-golomb" width="30" height="30" />
             </a>
           </SocialMediaContainer>
           {/* <OffersContainer>
