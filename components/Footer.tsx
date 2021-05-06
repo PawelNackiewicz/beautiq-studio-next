@@ -162,7 +162,6 @@ const Footer = React.memo(() => {
         </AddressWrapper>
       </AddressContainer>
       <SiteMapContainer>
-      
         <Link href="/Natalia-Golomb" passHref>
           <NavItem>O mnie</NavItem>
         </Link>
@@ -171,7 +170,7 @@ const Footer = React.memo(() => {
         </Link>
       </SiteMapContainer>
       <OfferContainer>
-      <Link href="/szkolenia" passHref>
+        <Link href="/szkolenia" passHref>
           <NavItem>Szkolenia</NavItem>
         </Link>
         <Link href="/przedluzanie-rzes" passHref>

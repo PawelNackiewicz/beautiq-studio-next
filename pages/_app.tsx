@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+import { DefaultSeo } from 'next-seo';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -30,6 +30,14 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <DefaultSeo
+        openGraph={{
+          type: 'website',
+          locale: 'pl_PL',
+          url: 'http://beautiqstudio.pl/',
+          site_name: 'BeautiQ Studio',
+        }}
+      />
       <GlobalStyle />
       <Navbar />
       <Component {...pageProps} />

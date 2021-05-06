@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 const PageContainer = styled.div`
   max-width: 1000px;
@@ -42,7 +43,6 @@ const StyledSectionHeader = styled.p`
   line-height: 150%;
   margin: 0.3rem;
 `;
-
 
 const StyledLink = styled.a`
   text-decoration: none;
@@ -106,6 +106,10 @@ const StyledLinkItem = styled.p`
 function Szkolenia() {
   return (
     <PageContainer>
+      <NextSeo
+        title="Szkolenia ze stylizacji rzęs"
+        description="Szkolenia ze stylizacji rzęs pod patronatem firmy Rarity. Szkolenia obdywają się w wojewódzctwie Opolskim - w Ozimku. Ozimek jest oddalony 20km od Opola. W ramach szkolen można dokształcać się z przedłużania rzęs każdą metodą - od 1:1 do 4D"
+      />
       <Image alt="Natalia Golomb" src="/szkolenie-przedluzanie-rzes.jpg" width="770" height="510" />
       <StyledHeader>SZKOLENIA Z PRZEDŁUŻANIA RZĘS - WOJEWÓDZTWO OPOLSKIE</StyledHeader>
       <StyledArticle>
@@ -155,8 +159,8 @@ function Szkolenia() {
         </StyledSection>
       </StyledArticle>
       <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
-          <StyledLinkItem>Zapisz się na szkolenie</StyledLinkItem>
-        </StyledLink>
+        <StyledLinkItem>Zapisz się na szkolenie</StyledLinkItem>
+      </StyledLink>
     </PageContainer>
   );
 }

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import Footer from '../components/Footer';
 
 const AboutMePageContainer = styled.div`
   max-width: 1000px;
