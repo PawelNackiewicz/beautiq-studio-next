@@ -30,11 +30,7 @@ const ArticleContainer = styled.div`
   }
 `;
 
-const StyledLink = styled.a`
-  text-decoration: none;
-`;
-
-const StyledLinkItem = styled.p`
+const StyledLink = styled.p`
   position: relative;
   top: 20px;
   padding: 10px 20px;
@@ -101,9 +97,9 @@ const Coaching = () => {
           stronie? Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego
           oraz efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
         </article>
-        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
-          <StyledLinkItem>czytaj więcej</StyledLinkItem>
-        </StyledLink>
+        <Link href="szkolenia" passHref>
+          <StyledLink>czytaj więcej</StyledLink>
+        </Link>
       </ArticleContainer>
       <Image alt="szkolenia" src="/szkolenia-opolskie.png" width="500" height="750" />
     </StyledContainer>

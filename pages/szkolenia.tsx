@@ -43,6 +43,66 @@ const StyledSectionHeader = styled.p`
   margin: 0.3rem;
 `;
 
+
+const StyledLink = styled.a`
+  text-decoration: none;
+`;
+
+const StyledLinkItem = styled.p`
+  position: relative;
+  top: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c4a747;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+
+  &:hover:before {
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #c4a747;
+    box-sizing: border-box;
+
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+  &:hover:after {
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+`;
+
 function Szkolenia() {
   return (
     <PageContainer>
@@ -94,6 +154,9 @@ function Szkolenia() {
           zapraszam Cię do kontaktu :-)
         </StyledSection>
       </StyledArticle>
+      <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
+          <StyledLinkItem>Zapisz się na szkolenie</StyledLinkItem>
+        </StyledLink>
     </PageContainer>
   );
 }
