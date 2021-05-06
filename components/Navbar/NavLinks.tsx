@@ -112,24 +112,14 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
       </NavItem>
       <NavItem>
-        <Link href="/makijaz-permanentny" passHref>
-          <NavItemLink onClick={() => setNavigationOpen(false)}>MAKIJAŻ PERMAMENTNY</NavItemLink>
-        </Link>
-      </NavItem>
-      <NavItem>
         <Link href="/stylizacja-brwi" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>BRWI</NavItemLink>
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="/kosmetologia" passHref>
-          <NavItemLink onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA</NavItemLink>
-        </Link>
-      </NavItem>
-      <NavItem>
-        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
+        <Link href="/szkolenia" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItemLink>
-        </StyledLink>
+        </Link>
       </NavItem>
       <NavItem>
         <Link href="/Natalia-Golomb" passHref>

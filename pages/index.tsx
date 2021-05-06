@@ -198,7 +198,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               <Image src="/icons/linkedin.png" alt="linkedin" width="30" height="30" />
             </a>
           </SocialMediaContainer>
-          <OffersContainer>
+          {/* <OffersContainer>
             <OfferWrapper>
               <Image src="/homePage/brwi.png" width="280" height="120" />
               <Link href="/stylizacja-brwi" passHref>
@@ -223,7 +223,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
                 <StyledLink>Makijaż permanentny</StyledLink>
               </Link>
             </OfferWrapper>
-          </OffersContainer>
+          </OffersContainer> */}
           <AboutMe />
           <Coaching />
           <ImageSlider images={images} />

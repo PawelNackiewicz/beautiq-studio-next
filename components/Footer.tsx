@@ -162,9 +162,7 @@ const Footer = React.memo(() => {
         </AddressWrapper>
       </AddressContainer>
       <SiteMapContainer>
-        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
-          <NavItem>Szkolenia</NavItem>
-        </StyledLink>
+      
         <Link href="/Natalia-Golomb" passHref>
           <NavItem>O mnie</NavItem>
         </Link>
@@ -173,17 +171,14 @@ const Footer = React.memo(() => {
         </Link>
       </SiteMapContainer>
       <OfferContainer>
+      <Link href="/szkolenia" passHref>
+          <NavItem>Szkolenia</NavItem>
+        </Link>
         <Link href="/przedluzanie-rzes" passHref>
           <NavItem>Rzęsy</NavItem>
         </Link>
         <Link href="/stylizacja-brwi" passHref>
           <NavItem>Brwi</NavItem>
-        </Link>
-        <Link href="/makijaz-permanentny" passHref>
-          <NavItem>Makijaż Permamentny</NavItem>
-        </Link>
-        <Link href="/kosmetologia" passHref>
-          <NavItem>Kosmetologia</NavItem>
         </Link>
       </OfferContainer>
       <SocialMediaContainer>
