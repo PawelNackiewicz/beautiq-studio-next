@@ -97,7 +97,7 @@ const Coaching = () => {
           stronie? Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego
           oraz efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
         </article>
-        <Link href="szkolenia" passHref>
+        <Link href="/szkolenia" passHref>
           <StyledLink>czytaj więcej</StyledLink>
         </Link>
       </ArticleContainer>

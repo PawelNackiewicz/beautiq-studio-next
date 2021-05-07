@@ -98,7 +98,7 @@ const AboutMe = () => {
           siebie i widzą efekty mojej pracy. Co może być większą nagrodą za moją pracę? :-) Jestem
           kosmetologiem, stylistką rzęs i brwi, instruktorem oraz linergistką. &#10084;
         </article>
-        <Link href="Natalia-Golomb" passHref>
+        <Link href="/Natalia-Golomb" passHref>
           <StyledLink>czytaj więcej</StyledLink>
         </Link>
       </ArticleContainer>
