@@ -29,7 +29,7 @@ function NataliaGolomb() {
   return (
     <AboutMePageContainer>
        <NextSeo
-        title="Stylistka brwi i rzęs w Ozimku" description="Najlepsza stylistka rzęs i brwi w Ozimku koło Opola"
+        title="Linergistka, trener stylizacji rzęs Rarity Academy, kosmetolog" description="Najlepsza stylistka rzęs i brwi w Ozimku koło Opola"
       />
       <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="530" height="800" />
       <StyledArticle>

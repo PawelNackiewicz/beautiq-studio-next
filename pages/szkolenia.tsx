@@ -50,7 +50,6 @@ const StyledLink = styled.a`
 
 const StyledLinkItem = styled.p`
   position: relative;
-  top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -107,23 +106,24 @@ function Szkolenia() {
   return (
     <PageContainer>
       <NextSeo
-        title="Szkolenia ze stylizacji rzęs"
+        title="Szkolenia ze stylizacji rzęs - Opolskie"
         description="Szkolenia ze stylizacji rzęs pod patronatem firmy Rarity. Szkolenia obdywają się w wojewódzctwie Opolskim - w Ozimku. Ozimek jest oddalony 20km od Opola. W ramach szkolen można dokształcać się z przedłużania rzęs każdą metodą - od 1:1 do 4D"
       />
       <Image alt="Natalia Golomb" src="/szkolenie-przedluzanie-rzes.jpg" width="770" height="510" />
-      <StyledHeader>SZKOLENIA Z PRZEDŁUŻANIA RZĘS - WOJEWÓDZTWO OPOLSKIE</StyledHeader>
+      <StyledHeader>SZKOLENIA Z PRZEDŁUŻANIA RZĘS</StyledHeader>
+      <StyledSectionHeader>WOJEWÓDZTWO OPOLSKIE</StyledSectionHeader>
       <StyledArticle>
         <StyledSection>
           Jestem trenerem stylizacji rzęs w firmie Rarity Academy. Jest to firma stworzona przez
           ikonę branży rzęsowej Monikę Mroczkę i jej męża.
         </StyledSection>
         <StyledSection>
-          Programy szkoleniowe Rarity Academy wyróżniają się prostotą i konkretną wiedzą- która
-          sprawia, że kursantka od razu po ukończeniu szkolenia NAPRAWDĘ potrafi przedłużać rzęsy !
+          Programy szkoleniowe Rarity Academy wyróżniają się prostotą i konkretną wiedzą - która
+          sprawia, że kursantka od razu po ukończeniu szkolenia NAPRAWDĘ potrafi przedłużać rzęsy!
           W województwie opolskim to ja reprezentuję jako instruktor firmę Rarity i mam zaszczyt
           prowadzić naprawdę świetne szkolenia! Jako instruktor zadbam oto, abyś kończąc szkolenie
           czuła się w 100% pewna swoich umiejętności! Po szkoleniu natomiast będziesz otoczona moją
-          opieką- w razie pytań zawsze służę pomocą ! Jakie szkolenie wybrać aby zostać
+          opieką - w razie pytań zawsze służę pomocą! Jakie szkolenie wybrać aby zostać
           profesjonalną stylistką?
         </StyledSection>
         <StyledSectionHeader>Szkolenie z metody podstawowej (1:1)</StyledSectionHeader>
@@ -131,7 +131,7 @@ function Szkolenia() {
           Jest to podstawa podstaw. Jest to tak zwana królowa metod! To na tym szkoleniu nauczysz
           się fundamentów w stylizacji rzęs. Czym są rzęsy? Klej? Polimeryzacja? Powierzchnia styku?
           Jak separować i zabezpieczać powiekę dolną? Poznasz wszystkie najważniejsze produkty
-          potrzebne do stworzenia pięknych aplikacji! I wiele, wiele więcej! :) Jest to
+          potrzebne do stworzenia pięknych aplikacji! I wiele, wiele więcej! Jest to
           najważniejsze szkolenie, gwarantuję, że nauczysz się wszystkiego co będzie Ci potrzebne
           aby natychmiast zacząć przyjmować klientki i zarabiać pieniądze!
         </StyledSection>
@@ -153,7 +153,7 @@ function Szkolenia() {
         </StyledSection>
         <StyledSectionHeader>SZKOLENIA HYBRYDOWE</StyledSectionHeader>
         <StyledSection>
-          Więcej informacji na temat szkoleń znajdziesz na www.nataliagolomb.pl tam również możesz
+          Więcej informacji na temat szkoleń znajdziesz w linku poniżej, tam również możesz
           od razu wybrać termin i zarezerwować dla siebie szkolenie W razie jakichkolwiek pytań
           zapraszam Cię do kontaktu :-)
         </StyledSection>
