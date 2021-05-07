@@ -7,6 +7,7 @@ import Coaching from '../components/Coaching';
 import { ImageSlider } from '../components/Slider/ImageSlider';
 import { InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
+import Layout from '../components/Layout';
 
 const MainContainer = styled.main`
   max-width: 1200px;
@@ -158,7 +159,7 @@ export async function getStaticProps() {
 
 export default function Home({ images }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div>
+    <Layout>
       <main>
         <MainContainer>
           <NextSeo title="Strona główna" description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy. Makijaż permamentny - Ozimek, okolice Opola" />
@@ -219,6 +220,6 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
           <FindMe />
         </MainContainer>
       </main>
-    </div>
+    </Layout>
   );
 }

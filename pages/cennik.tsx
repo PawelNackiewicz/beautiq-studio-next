@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NextSeo } from 'next-seo';
+import Layout from '../components/Layout';
 
 const PriceListWrapper = styled.div`
   max-width: 800px;
@@ -55,6 +56,7 @@ const PriceListTitle = styled.h4`
 
 function Cennik() {
   return (
+    <Layout title='Oferta - BeautiQ Studio'>
     <PriceListWrapper>
        <NextSeo
       title="Cennik"
@@ -196,6 +198,7 @@ function Cennik() {
         </tbody>
       </StyledTable>
     </PriceListWrapper>
+    </Layout>
   );
 }
 

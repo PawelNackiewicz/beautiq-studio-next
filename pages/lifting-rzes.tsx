@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
+import Layout from '../components/Layout';
 
 const LiftingPageContainer = styled.div`
   max-width: 1000px;
@@ -120,6 +121,7 @@ const StyledLinkContainer = styled.div`
 
 function LiftingRzes() {
   return (
+    <Layout title='Lifting rzęs'>
     <LiftingPageContainer>
        <NextSeo
         title="Lifting rzęs - Ozimek"
@@ -178,6 +180,7 @@ function LiftingRzes() {
         </Link>
       </StyledLinkContainer>
   </LiftingPageContainer>
+  </Layout>
   );
 }
 

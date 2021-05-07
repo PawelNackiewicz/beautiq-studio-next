@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import type { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar/Navbar';
@@ -30,12 +29,13 @@ const GlobalStyle = createGlobalStyle`
 
 const meta = {
   title: 'BeautiQ Studio - Natalia Golomb',
-  description: 'Stylizacja rzęs i brwi w Ozimku koło Opola. Makijaż permamenty oraz szkolenia z przedłużania rzęs. Zabiegi na twarz i wiele więcej...'
+  description:
+    'Stylizacja rzęs i brwi w Ozimku koło Opola. Makijaż permamenty oraz szkolenia z przedłużania rzęs. Zabiegi na twarz i wiele więcej...',
 };
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function Layout({ children, title = 'BeautiQ Studio - Natalia Golomb' } : any) {
   return (
-    <>
+    <div>
       <DefaultSeo
         title={meta.title}
         description={meta.description}
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
       <Head>
-        <title>BeautiQ Studio - Natalia Golomb</title>
+        <title>{title}</title>
         <link rel="icon" href="/mark.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
@@ -61,10 +61,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <Navbar />
-      <Component {...pageProps} />
+      {children}
       <Footer />
-    </>
+    </div>
   );
 }
-
-export default MyApp;
