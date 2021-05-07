@@ -163,7 +163,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
         <MainContainer>
           <NextSeo title="Strona główna" description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy. Makijaż permamentny - Ozimek, okolice Opola" />
           <HeaderFotoContainer>
-            <Image src="/background_clean.png" width="1200" height="183" alt="beautiq studio - Ozimek, okolice Opola"/>
+            <Image src="/background_clean.png" alt="beautiq studio - Ozimek, okolice Opola" width="1200" height="183" />
           </HeaderFotoContainer>
           <SocialMediaContainer>
             <a
