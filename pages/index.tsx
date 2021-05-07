@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -160,18 +159,6 @@ export async function getStaticProps() {
 export default function Home({ images }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
-      <Head>
-        <title>BeautiQ Studio - Natalia Golomb</title>
-        <link rel="icon" href="/mark.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff"></meta>
-      </Head>
-
       <main>
         <MainContainer>
           <NextSeo title="Strona główna" description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy. Makijaż permamentny - Ozimek, okolice Opola" />

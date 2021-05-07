@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
 import Footer from '../components/Footer';
@@ -27,17 +28,37 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const meta = {
+  title: 'BeautiQ Studio - Natalia Golomb',
+  description: 'Stylizacja rzęs i brwi w Ozimku koło Opola. Makijaż permamenty oraz szkolenia z przedłużania rzęs. Zabiegi na twarz i wiele więcej...',
+};
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
+        title={meta.title}
+        description={meta.description}
         openGraph={{
           type: 'website',
+          title: meta.title,
           locale: 'pl_PL',
-          url: 'http://beautiqstudio.pl/',
-          site_name: 'BeautiQ Studio',
+          url: `https://beautiqstudio.pl/`,
+          description: meta.description,
+          site_name: meta.title,
         }}
       />
+      <Head>
+        <title>BeautiQ Studio - Natalia Golomb</title>
+        <link rel="icon" href="/mark.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff"></meta>
+      </Head>
       <GlobalStyle />
       <Navbar />
       <Component {...pageProps} />
