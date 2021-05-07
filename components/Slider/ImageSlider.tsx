@@ -47,7 +47,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           <Slider>
             {images.map(({ media_url, id }, index) => (
               <Slide index={index} key={id}>
-                <InstagramImage src={media_url} />
+                <InstagramImage src={media_url} alt='Instagram - beautiq_studio_natalia_golomb'/>
               </Slide>
             ))}
           </Slider>
