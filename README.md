@@ -1,1 +1,1 @@
-## LIVE: https://beautiqstudio.pl
+## LIVE: beautiqstudio.pl
