@@ -101,7 +101,7 @@ const Coaching = () => {
           <StyledLink>czytaj więcej</StyledLink>
         </Link>
       </ArticleContainer>
-      <Image alt="szkolenia" src="/szkolenia-opolskie.png" width="500" height="750" />
+      <Image alt="szkolenia" src="/szkolenia-opolskie.png" width="510" height="765" />
     </StyledContainer>
   );
 };

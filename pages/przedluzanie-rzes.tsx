@@ -121,7 +121,7 @@ function PrzedluzanieRzes() {
     <Layout title="Przedłużanie rzęs">
       <EyelashExtensionsPageContainer>
         <NextSeo title="Przedłużanie rzęs - Ozimek" description="stylizacja rzęs - ozimek" />
-        <Image src="/przedluzanie-rzes.png" width="1000" height="700" alt="przedłużanie rzęs" />
+        <Image src="/przedluzanie-rzes.jpg" width="1000" height="700" alt="przedłużanie rzęs" />
         <StyledArticle>
           <StyledHeader>Przedłużanie rzęs</StyledHeader>
           <StyledSectionHeader>Metoda 1:1</StyledSectionHeader>

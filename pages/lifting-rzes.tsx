@@ -127,7 +127,7 @@ function LiftingRzes() {
         title="Lifting rzęs - Ozimek"
         description="laminacja rzęs"
       />
-    <Image src="/lifting-rzes.png" width="1000" height="700" alt='lifting rzęs'/>
+    <Image src="/lifting-rzes.jpg" width="1000" height="700" alt='lifting rzęs'/>
     <StyledArticle>
       <StyledHeader>Lifting rzęs</StyledHeader>
       <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>

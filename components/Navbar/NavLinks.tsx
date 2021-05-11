@@ -122,6 +122,11 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         </Link>
       </NavItem>
       <NavItem>
+        <Link href="/cennik" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>CENNIK</NavItemLink>
+        </Link>
+      </NavItem>
+      <NavItem>
         <Link href="/Natalia-Golomb" passHref>
           <NavItemLink onClick={() => setNavigationOpen(false)}>O MNIE</NavItemLink>
         </Link>
