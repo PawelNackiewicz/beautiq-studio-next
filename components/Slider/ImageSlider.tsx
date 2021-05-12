@@ -26,7 +26,7 @@ const InstagramImage = styled.img`
   height: 460px;
   width: 460px;
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 `;
 
 type ImageSliderProps = {
@@ -47,7 +47,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           <Slider>
             {images.map(({ media_url, id }, index) => (
               <Slide index={index} key={id}>
-                <InstagramImage alt='Instagram - beautiq_studio_natalia_golomb' src={media_url} />
+                <InstagramImage alt="Instagram - beautiq_studio_natalia_golomb" src={media_url} />
               </Slide>
             ))}
           </Slider>

@@ -9,7 +9,7 @@ const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
   border: solid 1px black;
-  background: #F2F2F2;
+  background: #f2f2f2;
 
   @media (max-width: 1000px) {
     top: 83px;
@@ -45,7 +45,6 @@ const MenuItems = [
     path: '/jak-dbac-o-rzesy',
   },
 ];
-
 
 type DropdownProps = {
   setNavigationOpen: Dispatch<SetStateAction<boolean>>;

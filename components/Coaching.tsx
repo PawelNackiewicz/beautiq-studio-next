@@ -91,11 +91,15 @@ const Coaching = () => {
       <ArticleContainer>
         <p>szkolenia</p>
         <article>
-          Jak zostać stylistką rzęs? Jak nauczyć się przedłużać rzęsy? Chciałabyś zdobyć nowy zawód?
-          Szukasz pracy dodatkowej? A może już jesteś w branży beauty i chciałabyś zdobyć nowe
-          kwalifikacje? A może sama jesteś klientką i chciałabyś spróbować być po tej drugiej
-          stronie? Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego
-          oraz efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
+          Jak zostać stylistką rzęs? <br /> Jak nauczyć się przedłużać rzęsy?
+          <br /> Chciałabyś zdobyć nowy zawód?
+          <br />
+          Szukasz pracy dodatkowej? <br />A może już jesteś w branży beauty i chciałabyś zdobyć nowe
+          kwalifikacje? <br />A może sama jesteś klientką i chciałabyś spróbować być po tej drugiej
+          stronie?
+          <br />
+          <br /> Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego oraz
+          efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
         </article>
         <Link href="/szkolenia" passHref>
           <StyledLink>czytaj więcej</StyledLink>

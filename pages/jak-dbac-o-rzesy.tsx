@@ -263,7 +263,7 @@ function JakDbacORzesy() {
         </StyledArticle>
         <StyledLinkContainer>
           <StyledLogoContainer>
-            <Image src="/mark.png" width="48" height="84" alt='BeautiQ Studio'/>
+            <Image src="/mark.png" width="48" height="84" alt="BeautiQ Studio" />
           </StyledLogoContainer>
           <Link href="/przedluzanie-rzes" passHref>
             <StyledLink>Przedłużanie rzęs</StyledLink>

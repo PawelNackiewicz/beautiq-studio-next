@@ -93,10 +93,13 @@ const AboutMe = () => {
       <ArticleContainer>
         <p>o mnie</p>
         <article>
-          Cześć! Nazywam się Natalia Golomb i jestem właścicielką BEAUTIQ Studio w Ozimku. To co
-          sprawia mi największą satysfakcję na codzień - są uśmiechy moich klientek - kiedy patrzą na
-          siebie i widzą efekty mojej pracy. Co może być większą nagrodą za moją pracę? :-) Jestem
-          kosmetologiem, stylistką rzęs i brwi, instruktorem oraz linergistką. &#10084;
+          Cześć!
+          <br /> Nazywam się Natalia Golomb i jestem właścicielką BEAUTIQ Studio w Ozimku.
+          <br /> To co sprawia mi największą satysfakcję na codzień - są uśmiechy moich klientek -
+          kiedy patrzą na siebie i widzą efekty mojej pracy. Co może być większą nagrodą za moją
+          pracę?
+          <br /> Jestem kosmetologiem, stylistką rzęs i brwi, instruktorem oraz linergistką.
+          &#10084;
         </article>
         <Link href="/Natalia-Golomb" passHref>
           <StyledLink>czytaj więcej</StyledLink>
