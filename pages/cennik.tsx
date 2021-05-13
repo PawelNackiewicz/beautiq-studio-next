@@ -102,6 +102,15 @@ function Cennik() {
             </tr>
           </tbody>
         </StyledTable>
+        <StyledOfferName>Makijaż permamentny</StyledOfferName>
+        <StyledTable>
+          <tbody>
+            <tr>
+              <td>BRWI - OMBRE BROWS</td>
+              <td>600 zł</td>
+            </tr>
+          </tbody>
+        </StyledTable>
         <StyledOfferName>Profesjonalna stylizacja brwi</StyledOfferName>
         <StyledTable>
           <tbody>
@@ -127,28 +136,28 @@ function Cennik() {
         <StyledTable>
           <tbody>
             <tr>
-              <td>ZABIEG LARENS: "Sekret wiecznej młodości"</td>
-              <td>180 zł</td>
+              <td>Larens Profesional</td>
+              <td>190 zł</td>
             </tr>
             <tr>
-              <td>ZABIEG LARENS: "Anti acne"</td>
-              <td>180 zł</td>
+              <td>Larens Profesional + mezoterapia mikroigłowa</td>
+              <td>250 zł</td>
             </tr>
             <tr>
-              <td>ZABIEG LARENS: "Anti age"</td>
-              <td>180 zł</td>
+              <td>Terapia Estgen</td>
+              <td>190 zł</td>
             </tr>
             <tr>
-              <td>ZABIEG LARENS: "Lipo coll"</td>
-              <td>180 zł</td>
+              <td>Terapia Estgen + mezoterapia mikroigłowa</td>
+              <td>250 zł</td>
             </tr>
             <tr>
-              <td>ZABIEG: Peeling kawitacyjny + serum/amupłka + krem</td>
-              <td>120 zł</td>
+              <td>Biorepeel Cl3</td>
+              <td>240 zł</td>
             </tr>
             <tr>
-              <td>ZABIEG: Peeling kawitacyjny + serum/amupłka + maska</td>
-              <td>160 zł</td>
+              <td>Biorepeel Cl3 + mezoterapia mikroigłowa</td>
+              <td>300 zł</td>
             </tr>
           </tbody>
         </StyledTable>
