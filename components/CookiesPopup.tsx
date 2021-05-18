@@ -1,21 +1,33 @@
 import styled from 'styled-components';
-import  {useLocalStorage}  from '../utils/utils';
+import { useLocalStorage } from '../utils/utils';
 
 const InformationContainer = styled.div`
-    margin: 0 auto 1rem;
-    background-color: lightgray;
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: .5rem;
-`
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 10;
+  box-shadow: 0 0 8px 2px #000;
+
+  @media screen and (min-width: 45em) {
+    left: 1rem;
+    bottom: 2rem;
+    max-width: 20rem;
+    border-radius: 5px;
+  }
+`;
 
 const StyledButton = styled.button`
-    background-color: transparent;
-    border: 1px solid #000;
-    cursor: pointer;
-`
+  background-color: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+`;
 
 type CookiesPreferences = 'not-accepted' | 'accepted';
 
@@ -28,12 +40,8 @@ export const CookiesPopup = () => {
   if (accepted === 'not-accepted') {
     return (
       <InformationContainer>
-        <p>
-          Ta strona, tak jak praktycznie każda w internecie, wykorzystuje ciasteczka.
-        </p>
-        <StyledButton onClick={() => setAccepted('accepted')}>
-          Rozumiem
-        </StyledButton>
+        <p>Ta strona, tak jak praktycznie każda w internecie, wykorzystuje ciasteczka.</p>
+        <StyledButton onClick={() => setAccepted('accepted')}>Rozumiem</StyledButton>
       </InformationContainer>
     );
   }
