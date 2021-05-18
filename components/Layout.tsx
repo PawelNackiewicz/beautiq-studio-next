@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Chat from '../components/Chat';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { DefaultSeo } from 'next-seo';
+import { CookiesPopup } from './CookiesPopup';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -64,6 +65,7 @@ export default function Layout({ children, title = 'BeautiQ Studio - Natalia Gol
       <Navbar />
       {children}
       <Chat />
+      <CookiesPopup />
       <Footer />
     </div>
   );
