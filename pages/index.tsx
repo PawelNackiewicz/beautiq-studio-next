@@ -134,7 +134,7 @@ const OfferWrapper = styled.div`
 `;
 
 export async function getStaticProps() {
-  const images = fs.readdirSync(path.resolve("./public", "instagram"));
+  const images = fs.readdirSync(path.join(process.cwd(),'public/instagram'));
   
   return {
     props: {
