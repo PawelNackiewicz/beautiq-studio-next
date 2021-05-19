@@ -63,7 +63,7 @@ function StylizacjaBrwi() {
           title="Stylizacja brwi - Ozimek, okolice Opola"
           description="stylizacja rzęs - ozimek"
         />
-        <Image src="/brwi.jpg" width="600" height="360" />
+        <Image src="/brwi.jpg" width="600" height="360" alt='stylizacja brwi'/>
         <StyledArticle>
           <StyledHeader>Stylizacja brwi</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>

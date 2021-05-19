@@ -37,7 +37,7 @@ const Chat = () => {
         // @ts-ignore
         attribution="setup_tool"
         theme_color="#C4A747"
-        page_id="111"
+        page_id="1856730567922043"
       ></div>
     </>
   );
