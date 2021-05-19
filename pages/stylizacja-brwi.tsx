@@ -7,6 +7,9 @@ const EyebrowPageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const StyledHeader = styled.h4`
@@ -60,7 +63,7 @@ function StylizacjaBrwi() {
           title="Stylizacja brwi - Ozimek, okolice Opola"
           description="stylizacja rzęs - ozimek"
         />
-        <Image src="/homePage/brwi.png" width="1000" height="400" />
+        <Image src="/brwi.jpg" width="600" height="360" />
         <StyledArticle>
           <StyledHeader>Stylizacja brwi</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
