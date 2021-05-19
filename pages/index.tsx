@@ -8,6 +8,8 @@ import { ImageSlider } from '../components/Slider/ImageSlider';
 import { InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
+import fs from 'fs'
+import path from 'path';
 
 const MainContainer = styled.main`
   max-width: 1200px;
@@ -131,25 +133,9 @@ const OfferWrapper = styled.div`
   height: 210px;
 `;
 
-export type InstagramMedia = {
-  readonly id: string;
-  readonly media_url: string;
-  readonly media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
-};
-
-type Response = {
-  readonly data: InstagramMedia[];
-};
-
 export async function getStaticProps() {
-  const response = await fetch(
-    `https://graph.instagram.com/17841435177986860/media?fields=id,media_url,media_type&access_token=${process.env.INSTAGRAM_TOKEN}`,
-  );
-  const responseAsJson: Response = await response.json();
-  const images: InstagramMedia[] = responseAsJson.data.filter(
-    (image: InstagramMedia) => image.media_type === 'IMAGE',
-  );
-
+  const images = fs.readdirSync(path.resolve("./public", "instagram"));
+  
   return {
     props: {
       images,

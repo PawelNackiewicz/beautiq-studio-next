@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import { InstagramMedia } from '../../pages';
 import styled from 'styled-components';
 
 const CarouselWrapper = styled.div`
@@ -20,17 +19,8 @@ const InstagramLink = styled.a`
   font-weight: 700;
 `;
 
-const InstagramImage = styled.img`
-  max-width: 100%;
-  max-height: 100%;
-  height: 460px;
-  width: 460px;
-  background-size: contain;
-  background-repeat: no-repeat;
-`;
-
 type ImageSliderProps = {
-  images: InstagramMedia[];
+  images: string[];
 };
 
 export function ImageSlider({ images }: ImageSliderProps) {
@@ -45,10 +35,10 @@ export function ImageSlider({ images }: ImageSliderProps) {
           isPlaying={true}
         >
           <Slider>
-            {images.map(({ media_url, id }, index) => (
-              <Slide index={index} key={id}>
-                <InstagramImage alt="Instagram - beautiq_studio_natalia_golomb" src={media_url} />
-              </Slide>
+            {images.map((image, index) => (
+                <Slide index={index} key={image}>
+                  <Image alt={image} src={`/instagram/${image}`} width={400} height={400} layout='intrinsic' quality={100} />
+                </Slide>
             ))}
           </Slider>
         </CarouselProvider>
