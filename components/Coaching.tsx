@@ -20,21 +20,12 @@ const ArticleContainer = styled.div`
   width: 50%;
   padding: 0 3rem;
 
-  p {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   @media (max-width: 1000px) {
     width: 100%;
   }
 `;
 
-const StyledLink = styled.a`
-  text-decoration: none;
-`;
-
-const StyledLinkItem = styled.p`
+const StyledLink = styled.p`
   position: relative;
   top: 20px;
   padding: 10px 20px;
@@ -89,23 +80,43 @@ const StyledLinkItem = styled.p`
   }
 `;
 
+const StyledArticle = styled.article`
+  text-align: center;
+`;
+
+const StyledHeader = styled.h4`
+  font-weight: 700;
+  text-transform: uppercase;
+`;
+
+const StyledParagraph = styled.p``;
+
 const Coaching = () => {
   return (
     <StyledContainer>
       <ArticleContainer>
-        <p>szkolenia</p>
-        <article>
-          Jak zostać stylistką rzęs? Jak nauczyć się przedłużać rzęsy? Chciałabyś zdobyć nowy zawód?
-          Szukasz pracy dodatkowej? A może już jesteś w branży beauty i chciałabyś zdobyć nowe
-          kwalifikacje? A może sama jesteś klientką i chciałabyś spróbować być po tej drugiej
-          stronie? Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego
-          oraz efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
-        </article>
-        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
-          <StyledLinkItem>czytaj więcej</StyledLinkItem>
-        </StyledLink>
+        <StyledHeader>szkolenia</StyledHeader>
+        <StyledArticle>
+          <StyledParagraph>Jak zostać stylistką rzęs? </StyledParagraph>
+          <StyledParagraph>Jak nauczyć się przedłużać rzęsy?</StyledParagraph>
+          <StyledParagraph>Chciałabyś zdobyć nowy zawód?</StyledParagraph>
+          <StyledParagraph>Szukasz pracy dodatkowej?</StyledParagraph>
+          <StyledParagraph>
+            A może już jesteś w branży beauty i chciałabyś zdobyć nowe kwalifikacje?
+          </StyledParagraph>
+          <StyledParagraph>
+            A może sama jesteś klientką i chciałabyś spróbować być po tej drugiej stronie?
+          </StyledParagraph>
+          <StyledParagraph>
+            Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego oraz
+            efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
+          </StyledParagraph>
+        </StyledArticle>
+        <Link href="/szkolenia" passHref>
+          <StyledLink>czytaj więcej</StyledLink>
+        </Link>
       </ArticleContainer>
-      <Image alt="szkolenia" src="/szkolenia-opolskie.png" width="500" height="750" />
+      <Image alt="szkolenia" src="/szkolenia-opolskie.png" width="510" height="765" />
     </StyledContainer>
   );
 };

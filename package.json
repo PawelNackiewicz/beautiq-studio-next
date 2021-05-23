@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "tsc": "tsc --noEmit",
-    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.0",
@@ -20,9 +21,11 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "next": "10.0.6",
+    "next-seo": "^4.24.0",
     "pure-react-carousel": "^1.27.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "sharp": "^0.28.2",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {

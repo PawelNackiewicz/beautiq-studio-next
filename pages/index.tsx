@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,6 +6,10 @@ import AboutMe from '../components/AboutMe';
 import Coaching from '../components/Coaching';
 import { ImageSlider } from '../components/Slider/ImageSlider';
 import { InferGetStaticPropsType } from 'next';
+import { NextSeo } from 'next-seo';
+import Layout from '../components/Layout';
+import fs from 'fs'
+import path from 'path';
 
 const MainContainer = styled.main`
   max-width: 1200px;
@@ -130,25 +133,9 @@ const OfferWrapper = styled.div`
   height: 210px;
 `;
 
-export type InstagramMedia = {
-  readonly id: string;
-  readonly media_url: string;
-  readonly media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
-};
-
-type Response = {
-  readonly data: InstagramMedia[];
-};
-
 export async function getStaticProps() {
-  const response = await fetch(
-    `https://graph.instagram.com/17841435177986860/media?fields=id,media_url,media_type&access_token=${process.env.INSTAGRAM_TOKEN}`,
-  );
-  const responseAsJson: Response = await response.json();
-  const images: InstagramMedia[] = responseAsJson.data.filter(
-    (image: InstagramMedia) => image.media_type === 'IMAGE',
-  );
-
+  const images = fs.readdirSync(path.join(process.cwd(),'public/Instagram'));
+  
   return {
     props: {
       images,
@@ -158,23 +145,20 @@ export async function getStaticProps() {
 
 export default function Home({ images }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div>
-      <Head>
-        <title>BeautiQ Studio - Natalia Golomb</title>
-        <link rel="icon" href="/mark.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff"></meta>
-      </Head>
-
+    <Layout>
       <main>
         <MainContainer>
+          <NextSeo
+            title="Strona główna"
+            description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy. Makijaż permamentny - Ozimek, okolice Opola"
+          />
           <HeaderFotoContainer>
-            <Image src="/background_clean.png" width="1200" height="183" />
+            <Image
+              src="/background_clean.png"
+              alt="beautiq studio - Ozimek, okolice Opola"
+              width="1200"
+              height="183"
+            />
           </HeaderFotoContainer>
           <SocialMediaContainer>
             <a
@@ -183,7 +167,12 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               rel="noreferrer"
             >
               {' '}
-              <Image src="/icons/facebook.png" alt="facebook" width="30" height="30" />
+              <Image
+                src="/icons/facebook.png"
+                alt="facebook.com/beautiq.studio.ozimek"
+                width="30"
+                height="30"
+              />
             </a>
             <a
               href="https://www.instagram.com/beautiq_studio_natalia_golomb/?hl=pl"
@@ -191,14 +180,24 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               rel="noreferrer"
             >
               {' '}
-              <Image src="/icons/instagram.png" alt="instagram" width="30" height="30" />
+              <Image
+                src="/icons/instagram.png"
+                alt="https://www.instagram.com/beautiq_studio_natalia_golomb"
+                width="30"
+                height="30"
+              />
             </a>
             <a href="https://www.linkedin.com/in/natalia-golomb/" target="_blank" rel="noreferrer">
               {' '}
-              <Image src="/icons/linkedin.png" alt="linkedin" width="30" height="30" />
+              <Image
+                src="/icons/linkedin.png"
+                alt="linkedin.com/in/natalia-golomb"
+                width="30"
+                height="30"
+              />
             </a>
           </SocialMediaContainer>
-          <OffersContainer>
+          {/* <OffersContainer>
             <OfferWrapper>
               <Image src="/homePage/brwi.png" width="280" height="120" />
               <Link href="/stylizacja-brwi" passHref>
@@ -223,13 +222,13 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
                 <StyledLink>Makijaż permanentny</StyledLink>
               </Link>
             </OfferWrapper>
-          </OffersContainer>
+          </OffersContainer> */}
           <AboutMe />
           <Coaching />
           <ImageSlider images={images} />
           <FindMe />
         </MainContainer>
       </main>
-    </div>
+    </Layout>
   );
 }

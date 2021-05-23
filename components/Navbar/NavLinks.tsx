@@ -32,6 +32,50 @@ const NavItem = styled.li`
   }
 `;
 
+const NavItemButoon = styled.button`
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #111;
+  white-space: nowrap;
+  margin: 0 1vw;
+  transition: all 1400ms ease-in;
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: 'Crimson Pro', serif;
+  line-height: 21px;
+  cursor: pointer;
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    content: '.';
+    color: transparent;
+    background: #c4a747;
+    height: 1px;
+    transition: all 0.8s ease-in;
+  }
+  :hover {
+    color: #c4a747;
+    ::after {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1000px) {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    z-index: 6;
+    display: flex;
+  }
+  
+`
+
 const NavItemLink = styled.a`
   text-decoration: none;
   color: #111;
@@ -108,13 +152,8 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
   return (
     <StyledList>
       <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
-        <NavItemLink>RZĘSY</NavItemLink>
+        <NavItemButoon>RZĘSY</NavItemButoon>
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
-      </NavItem>
-      <NavItem>
-        <Link href="/makijaz-permanentny" passHref>
-          <NavItemLink onClick={() => setNavigationOpen(false)}>MAKIJAŻ PERMAMENTNY</NavItemLink>
-        </Link>
       </NavItem>
       <NavItem>
         <Link href="/stylizacja-brwi" passHref>
@@ -122,14 +161,14 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
         </Link>
       </NavItem>
       <NavItem>
-        <Link href="/kosmetologia" passHref>
-          <NavItemLink onClick={() => setNavigationOpen(false)}>KOSMETOLOGIA</NavItemLink>
+        <Link href="/szkolenia" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItemLink>
         </Link>
       </NavItem>
       <NavItem>
-        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
-          <NavItemLink onClick={() => setNavigationOpen(false)}>SZKOLENIA</NavItemLink>
-        </StyledLink>
+        <Link href="/cennik" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>CENNIK</NavItemLink>
+        </Link>
       </NavItem>
       <NavItem>
         <Link href="/Natalia-Golomb" passHref>
