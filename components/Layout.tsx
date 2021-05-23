@@ -6,6 +6,10 @@ import Chat from '../components/Chat';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { DefaultSeo } from 'next-seo';
 import { CookiesPopup } from './CookiesPopup';
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import * as gtag from "../lib/gtag";
+const isProduction = process.env.NODE_ENV === "production";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -36,6 +40,19 @@ const meta = {
 };
 
 export default function Layout({ children, title = 'BeautiQ Studio - Natalia Golomb' }: any) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url: URL) => {
+      /* invoke analytics function only for production */
+      if (isProduction) gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <div>
       <DefaultSeo
