@@ -3509,7 +3509,7 @@
   "resolved" "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz"
   "version" "2.0.1"
 
-"styled-components@^5.2.0", "styled-components@>= 2":
+"styled-components@^5.3.0", "styled-components@>= 2":
   "integrity" "sha512-bPJKwZCHjJPf/hwTJl6TbkSZg/3evha+XPEizrZUGb535jLImwDUdjTNxXqjjaASt2M4qO4AVfoHJNe3XB/tpQ=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.3.0.tgz"
   "version" "5.3.0"
