@@ -144,7 +144,7 @@ function JakDbacORzesy() {
   return (
     <Layout title="Jak dbać o rzęsy">
       <PageContainer>
-        <NextSeo title="Jak dbać o rzęsy" description="skuteczna pielęgnacja rzęs" />
+        <NextSeo title="Jak dbać o przedłużone rzęsy aby nie wypadały kępki" description="skuteczna pielęgnacja rzęs" />
         <ImageContainer>
           <Image src="/images/lashPages/jak-dbac-o-rzesy.png" width="600" height="750" alt="jak dbać o rzęsy" />
           {isMobileView && (

@@ -58,7 +58,7 @@ function Cennik() {
   return (
     <Layout title="Oferta - BeautiQ Studio">
       <PriceListWrapper>
-        <NextSeo title="Cennik" description="Oferta - BeautiQ Studio - Natalia Golomb" />
+        <NextSeo title="Cennik - pełna oferta salonu BeautiQ Studio" description="Oferta - BeautiQ Studio - Natalia Golomb" />
         <PriceListTitle id="cennik">Cennik</PriceListTitle>
         <StyledOfferName>Przedłużanie i zagęszczenie rzęs</StyledOfferName>
         <StyledTable>

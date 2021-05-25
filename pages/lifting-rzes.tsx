@@ -123,7 +123,7 @@ function LiftingRzes() {
   return (
     <Layout title="Lifting rzęs">
       <LiftingPageContainer>
-        <NextSeo title="Lifting rzęs - Ozimek" description="laminacja rzęs" />
+        <NextSeo title="Lifting rzęs - Ozimek, okolice Opola" description="laminacja rzęs" />
         <Image src="/images/lashPages/lifting-rzes.jpg" width="1000" height="700" alt="lifting rzęs" />
         <StyledArticle>
           <StyledHeader>Lifting rzęs</StyledHeader>

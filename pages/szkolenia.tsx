@@ -108,7 +108,7 @@ function Szkolenia() {
     <Layout title="Szkolenia">
       <PageContainer>
         <NextSeo
-          title="Szkolenia ze stylizacji rzęs - Opolskie"
+          title="Szkolenie z przedłużania rzęs - Opolskie"
           description="Szkolenia ze stylizacji rzęs pod patronatem firmy Rarity. Szkolenia obdywają się w wojewódzctwie Opolskim - w Ozimku. Ozimek jest oddalony 20km od Opola. W ramach szkolen można dokształcać się z przedłużania rzęs każdą metodą - od 1:1 do 4D"
         />
         <Image

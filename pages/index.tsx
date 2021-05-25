@@ -149,8 +149,8 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
       <main>
         <MainContainer>
           <NextSeo
-            title="Strona główna"
-            description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy. Makijaż permamentny - Ozimek, okolice Opola"
+            title="BequtiQ Studio - Natalia Golomb"
+            description="Stylistka rzęs i brwi w Ozimku. Szkolenia z przedłużania rzęs - RarityAcademy - Opole. Makijaż permamentny - Ozimek, okolice Opola"
           />
           <HeaderFotoContainer>
             <Image
