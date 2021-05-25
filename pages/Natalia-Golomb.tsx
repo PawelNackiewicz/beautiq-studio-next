@@ -34,7 +34,7 @@ function NataliaGolomb() {
           title="Linergistka, trener stylizacji rzęs Rarity Academy, kosmetolog"
           description="Najlepsza stylistka rzęs i brwi w Ozimku koło Opola"
         />
-        <Image alt="Natalia Golomb" src="/Natalia_Golomb.jpg" width="530" height="795" />
+        <Image alt="Natalia Golomb" src="/images/aboutMePage/Natalia_Golomb.jpg" width="530" height="795" />
         <StyledArticle>
           <StyledSection>
             Cześć! Nazywam się Natalia Golomb i jestem właścicielką BEAUTIQ Studio w Ozimku. To co

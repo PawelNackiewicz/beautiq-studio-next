@@ -113,7 +113,7 @@ function Szkolenia() {
         />
         <Image
           alt="Natalia Golomb"
-          src="/szkolenie-przedluzanie-rzes.jpg"
+          src="/images/trainingPage/szkolenie-przedluzanie-rzes.jpg"
           width="770"
           height="510"
         />

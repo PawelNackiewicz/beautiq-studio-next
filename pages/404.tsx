@@ -89,7 +89,7 @@ export default function Custom404() {
       <PageContainer>
         <LabelContainer>
           <p>4</p>
-          <Image src="/mark.png" width="48" height="84" alt="BeautiQ Studio" />
+          <Image src="/brand/mark.png" width="48" height="84" alt="BeautiQ Studio" />
           <p>4</p>
         </LabelContainer>
         <StyledLabel>Ups, coś poszło nie tak.</StyledLabel>

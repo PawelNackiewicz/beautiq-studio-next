@@ -95,7 +95,7 @@ const StyledParagraph = styled.p``;
 const AboutMe = () => {
   return (
     <StyledContainer>
-      <Image alt="Natalia Golomb" src="/Natalia-Golomb.jpg" width="530" height="795" />
+      <Image alt="Natalia Golomb" src="/images/homePage/Natalia-Golomb.jpg" width="530" height="795" />
       <ArticleContainer>
         <StyledHeader>o mnie</StyledHeader>
         <StyledArticle>

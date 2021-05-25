@@ -134,7 +134,7 @@ const OfferWrapper = styled.div`
 `;
 
 export async function getStaticProps() {
-  const images = fs.readdirSync(path.join(process.cwd(),'public/Instagram'));
+  const images = fs.readdirSync(path.join(process.cwd(),'public/images/Instagram'));
   
   return {
     props: {
@@ -154,7 +154,7 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
           />
           <HeaderFotoContainer>
             <Image
-              src="/background_clean.png"
+              src="/images/homePage/background_clean.png"
               alt="beautiq studio - Ozimek, okolice Opola"
               width="1200"
               height="183"

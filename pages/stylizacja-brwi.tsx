@@ -63,7 +63,7 @@ function StylizacjaBrwi() {
           title="Stylizacja brwi - Ozimek, okolice Opola"
           description="stylizacja rzęs - ozimek"
         />
-        <Image src="/brwi.jpg" width="600" height="360" alt='stylizacja brwi'/>
+        <Image src="/images/browsPage/brwi.jpg" width="600" height="360" alt='stylizacja brwi'/>
         <StyledArticle>
           <StyledHeader>Stylizacja brwi</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
@@ -96,7 +96,7 @@ function StylizacjaBrwi() {
             poprawek kształtu.
           </StyledSection>
           <StyledLogoContainer>
-            <Image src="/mark.png" width="48" height="84" />
+            <Image src="/brand/mark.png" width="48" height="84" />
           </StyledLogoContainer>
           <StyledSection>
             Henna naturalna EKKO BEAUTY firmy NIKK MOLE, na której pracuję, powstaje w najmniej

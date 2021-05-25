@@ -37,7 +37,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           <Slider>
             {images.map((image, index) => (
                 <Slide index={index} key={image}>
-                  <Image alt={image} src={`/Instagram/${image}`} width={400} height={400} layout='intrinsic' quality={100} />
+                  <Image alt={image} src={`/images/Instagram/${image}`} width={400} height={400} layout='intrinsic' quality={100} />
                 </Slide>
             ))}
           </Slider>

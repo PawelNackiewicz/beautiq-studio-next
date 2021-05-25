@@ -19,7 +19,7 @@ const Logo = ({ setNavigationOpen }: LogoProps) => {
     <Link href="/" passHref>
       <a onClick={() => setNavigationOpen(false)}>
         <HeaderContainer>
-          <Image alt="logo" src="/logo_gold.png" width="172" height="52" />
+          <Image alt="logo" src="/brand/logo_gold.png" width="172" height="52" />
         </HeaderContainer>
       </a>
     </Link>

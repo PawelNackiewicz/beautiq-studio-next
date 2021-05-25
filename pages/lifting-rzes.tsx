@@ -124,7 +124,7 @@ function LiftingRzes() {
     <Layout title="Lifting rzęs">
       <LiftingPageContainer>
         <NextSeo title="Lifting rzęs - Ozimek" description="laminacja rzęs" />
-        <Image src="/lifting-rzes.jpg" width="1000" height="700" alt="lifting rzęs" />
+        <Image src="/images/lashPages/lifting-rzes.jpg" width="1000" height="700" alt="lifting rzęs" />
         <StyledArticle>
           <StyledHeader>Lifting rzęs</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
@@ -171,7 +171,7 @@ function LiftingRzes() {
           </StyledSection>
         </StyledArticle>
         <StyledLogoContainer>
-          <Image src="/mark.png" width="48" height="84" />
+          <Image src="/brand/mark.png" width="48" height="84" />
         </StyledLogoContainer>
         <StyledLinkContainer>
           <Link href="/przedluzanie-rzes" passHref>

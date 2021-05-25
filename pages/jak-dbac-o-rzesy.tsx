@@ -146,17 +146,17 @@ function JakDbacORzesy() {
       <PageContainer>
         <NextSeo title="Jak dbać o rzęsy" description="skuteczna pielęgnacja rzęs" />
         <ImageContainer>
-          <Image src="/jak-dbac-o-rzesy.png" width="600" height="750" alt="jak dbać o rzęsy" />
+          <Image src="/images/lashPages/jak-dbac-o-rzesy.png" width="600" height="750" alt="jak dbać o rzęsy" />
           {isMobileView && (
             <>
               <Image
-                src="/jak-dbac-o-rzesy-2.png"
+                src="/images/lashPages/jak-dbac-o-rzesy-2.png"
                 width="600"
                 height="750"
                 alt="jak dbać o rzęsy"
               />
               <Image
-                src="/jak-dbac-o-rzesy-3.png"
+                src="/images/lashPages/jak-dbac-o-rzesy-3.png"
                 width="600"
                 height="750"
                 alt="jak pielęgnować rzęsy"
@@ -263,7 +263,7 @@ function JakDbacORzesy() {
         </StyledArticle>
         <StyledLinkContainer>
           <StyledLogoContainer>
-            <Image src="/mark.png" width="48" height="84" alt="BeautiQ Studio" />
+            <Image src="/brand/mark.png" width="48" height="84" alt="BeautiQ Studio" />
           </StyledLogoContainer>
           <Link href="/przedluzanie-rzes" passHref>
             <StyledLink>Przedłużanie rzęs</StyledLink>

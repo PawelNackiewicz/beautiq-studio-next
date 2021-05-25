@@ -121,7 +121,7 @@ function PrzedluzanieRzes() {
     <Layout title="Przedłużanie rzęs">
       <EyelashExtensionsPageContainer>
         <NextSeo title="Przedłużanie rzęs - Ozimek" description="stylizacja rzęs - ozimek" />
-        <Image src="/przedluzanie-rzes.jpg" width="1000" height="700" alt="przedłużanie rzęs" />
+        <Image src="/images/lashPages/przedluzanie-rzes.jpg" width="1000" height="700" alt="przedłużanie rzęs" />
         <StyledArticle>
           <StyledHeader>Przedłużanie rzęs</StyledHeader>
           <StyledSectionHeader>Metoda 1:1</StyledSectionHeader>
@@ -158,7 +158,7 @@ function PrzedluzanieRzes() {
             noszeniu mocniejszych aplikacji, rzęsy naturalne mogą się osłabić.{' '}
           </StyledSection>
           <StyledLogoContainer>
-            <Image src="/mark.png" width="48" height="84" />
+            <Image src="/brand/mark.png" width="48" height="84" />
           </StyledLogoContainer>
           <StyledSection>
             Najlepszym wyborem jest konsultacja z wykwalifikowaną stylistką, która odpowiednio
