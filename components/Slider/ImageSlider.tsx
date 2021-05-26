@@ -47,7 +47,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           target="_blank"
           rel="noreferrer"
         >
-          Zapraszam na mój Instagram
+          zajrzyj na mój Instagram
         </InstagramLink>
       </CarouselWrapper>
     );

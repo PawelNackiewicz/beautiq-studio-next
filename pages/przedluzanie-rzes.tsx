@@ -11,18 +11,18 @@ const EyelashExtensionsPageContainer = styled.div`
   padding: 1rem 0;
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h1`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 150%;
   margin: 0.3rem;
   text-transform: uppercase;
 `;
 
-const StyledSectionHeader = styled.p`
+const StyledSectionHeader = styled.h2`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
@@ -121,7 +121,7 @@ function PrzedluzanieRzes() {
     <Layout title="Przedłużanie rzęs">
       <EyelashExtensionsPageContainer>
         <NextSeo title="Przedłużanie rzęs - Ozimek" description="stylizacja rzęs - ozimek" />
-        <Image src="/images/lashPages/przedluzanie-rzes.jpg" width="1000" height="700" alt="przedłużanie rzęs" />
+        <Image src="/images/lashPages/przedluzanie-rzes.jpg" width="1000" height="700" alt="przedłużanie rzęs" quality={100}/>
         <StyledArticle>
           <StyledHeader>Przedłużanie rzęs</StyledHeader>
           <StyledSectionHeader>Metoda 1:1</StyledSectionHeader>

@@ -37,7 +37,7 @@ const FindMe = () => {
     <FindMeContainer>
       <InformationContainer>
         <LogoContainer>
-          <Image src="/logo.png" width="172" height="52" alt="logo" />
+          <Image src="/brand/logo.png" width="172" height="52" alt="logo" />
         </LogoContainer>
         <p>BeautiQ Studio</p>
         <p>Częstochowska 15</p>

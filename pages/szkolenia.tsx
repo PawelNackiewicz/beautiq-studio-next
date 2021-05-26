@@ -12,12 +12,12 @@ const PageContainer = styled.div`
   flex-direction: column;
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h1`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 150%;
   margin: 0.3rem;
   text-transform: uppercase;
@@ -35,12 +35,12 @@ const StyledSection = styled.section`
   margin-bottom: 1rem;
 `;
 
-const StyledSectionHeader = styled.p`
+const StyledSectionHeader = styled.h2`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 150%;
   margin: 0.3rem;
 `;
@@ -116,47 +116,48 @@ function Szkolenia() {
           src="/images/trainingPage/szkolenie-przedluzanie-rzes.jpg"
           width="770"
           height="510"
+          quality={100}
         />
         <StyledHeader>SZKOLENIA Z PRZEDŁUŻANIA RZĘS</StyledHeader>
         <StyledSectionHeader>WOJEWÓDZTWO OPOLSKIE</StyledSectionHeader>
         <StyledArticle>
           <StyledSection>
-            Jestem trenerem stylizacji rzęs w firmie Rarity Academy. Jest to firma stworzona przez
+            Jestem trenerem stylizacji rzęs w firmie <strong>Rarity Academy</strong>. Jest to firma stworzona przez
             ikonę branży rzęsowej Monikę Mroczkę i jej męża.
           </StyledSection>
           <StyledSection>
-            Programy szkoleniowe Rarity Academy wyróżniają się prostotą i konkretną wiedzą - która
-            sprawia, że kursantka od razu po ukończeniu szkolenia NAPRAWDĘ potrafi przedłużać rzęsy!
+            Programy szkoleniowe Rarity Academy wyróżniają się <strong>prostotą i konkretną wiedzą</strong> - która
+            sprawia, że kursantka od razu po ukończeniu szkolenia <strong>NAPRAWDĘ</strong> potrafi przedłużać rzęsy!
             W województwie opolskim to ja reprezentuję jako instruktor firmę Rarity i mam zaszczyt
-            prowadzić naprawdę świetne szkolenia! Jako instruktor zadbam oto, abyś kończąc szkolenie
-            czuła się w 100% pewna swoich umiejętności! Po szkoleniu natomiast będziesz otoczona
+            prowadzić naprawdę świetne szkolenia! Jako instruktor zadbam oto, <strong>abyś kończąc szkolenie
+            czuła się w 100% pewna swoich umiejętności!</strong> Po szkoleniu natomiast będziesz otoczona
             moją opieką - w razie pytań zawsze służę pomocą! Jakie szkolenie wybrać aby zostać
             profesjonalną stylistką?
           </StyledSection>
           <StyledSectionHeader>Szkolenie z metody podstawowej (1:1)</StyledSectionHeader>
           <StyledSection>
-            Jest to podstawa podstaw. Jest to tak zwana królowa metod! To na tym szkoleniu nauczysz
-            się fundamentów w stylizacji rzęs. Czym są rzęsy? Klej? Polimeryzacja? Powierzchnia
+            Jest to podstawa podstaw. Jest to tak zwana królowa metod! To na tym <strong>szkoleniu nauczysz
+            się fundamentów w stylizacji rzęs.</strong> Czym są rzęsy? Klej? Polimeryzacja? Powierzchnia
             styku? Jak separować i zabezpieczać powiekę dolną? Poznasz wszystkie najważniejsze
-            produkty potrzebne do stworzenia pięknych aplikacji! I wiele, wiele więcej! Jest to
-            najważniejsze szkolenie, gwarantuję, że nauczysz się wszystkiego co będzie Ci potrzebne
+            produkty potrzebne do stworzenia pięknych aplikacji! I wiele, wiele więcej! Jest to 
+            <strong>najważniejsze szkolenie</strong>, gwarantuję, że nauczysz się wszystkiego co będzie Ci potrzebne
             aby natychmiast zacząć przyjmować klientki i zarabiać pieniądze!
           </StyledSection>
           <StyledSectionHeader>Szkolenie z 1 stopnia objętości (2-3D)</StyledSectionHeader>
           <StyledSection>
             Jeżeli ukończyłaś szkolenie podstawowe, możesz przejść już do nauki robienia kępek -
-            jest to podstawa metod objętościowych. Nauczę Cię różnych metod ich tworzenia, różnymi
-            zakrzywieniami pęset. Poznasz bardziej zaawansowane techniki tworzenia aplikacji LIGHT
-            VOLUME oraz skupimy się na schematach wyklejania. Po ukończeniu tego szkolenia możesz
+            jest to <strong>podstawa metod objętościowych</strong>. Nauczę Cię różnych metod ich tworzenia, różnymi
+            zakrzywieniami pęset. Poznasz bardziej zaawansowane techniki tworzenia aplikacji <strong>LIGHT
+            VOLUME</strong> oraz skupimy się na schematach wyklejania. Po ukończeniu tego szkolenia możesz
             dopisać kolejną usługę do swojego cennika!
           </StyledSection>
           <StyledSectionHeader>Szkolenie z 2 stopnia objętości (4-6D)</StyledSectionHeader>
           <StyledSection>
-            Tworzenie rzęs metodą Mega Volume jest kolejnym krokiem po małych objętościach! Na tym
+            Tworzenie rzęs metodą <strong>Mega Volume</strong> jest kolejnym krokiem po małych objętościach! Na tym
             szkoleniu dowiesz się jak tworzyć trwałe stylizacje i mocniejsze efekty. Tworzenie kępek
             4-6D to nie łatwa sprawa ale spokojnie, wszystkiego Cię nauczę. Rozwiniemy każdy temat,
             który był poruszany na szkoleniu z lekkich objętości i bardziej go rozwiniemy.
-            Stylizacja rzęs nie będzie miała już przed Tobą żadnych tajemnic!
+            <strong>Stylizacja rzęs nie będzie miała już przed Tobą żadnych tajemnic!</strong>
           </StyledSection>
           <StyledSectionHeader>SZKOLENIA HYBRYDOWE</StyledSectionHeader>
           <StyledSection>

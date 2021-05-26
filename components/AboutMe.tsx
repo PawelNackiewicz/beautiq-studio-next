@@ -85,9 +85,10 @@ const StyledArticle = styled.article`
   text-align: center;
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h2`
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 1.3rem;
 `;
 
 const StyledParagraph = styled.p``;
@@ -95,20 +96,20 @@ const StyledParagraph = styled.p``;
 const AboutMe = () => {
   return (
     <StyledContainer>
-      <Image alt="Natalia Golomb" src="/images/homePage/Natalia-Golomb.jpg" width="530" height="795" />
+      <Image alt="Natalia Golomb" src="/images/homePage/Natalia-Golomb.jpg" width="530" height="795" quality={100}/>
       <ArticleContainer>
         <StyledHeader>o mnie</StyledHeader>
         <StyledArticle>
           <StyledParagraph>Cześć!</StyledParagraph>
           <StyledParagraph>
-            Nazywam się Natalia Golomb i jestem właścicielką BEAUTIQ Studio w Ozimku.
+            Nazywam się <strong>Natalia Golomb</strong> i jestem właścicielką <strong>BEAUTIQ Studio</strong> w Ozimku.
           </StyledParagraph>
           <StyledParagraph>
             To co sprawia mi największą satysfakcję na codzień - są uśmiechy moich klientek - kiedy
             patrzą na siebie i widzą efekty mojej pracy. Co może być większą nagrodą za moją pracę?
           </StyledParagraph>
           <StyledParagraph>
-            Jestem kosmetologiem, stylistką rzęs i brwi, instruktorem oraz linergistką.
+            Jestem <strong>kosmetologiem, stylistką rzęs i brwi, instruktorem</strong> oraz <strong>linergistką</strong>.
           </StyledParagraph>
           &#10084;
         </StyledArticle>

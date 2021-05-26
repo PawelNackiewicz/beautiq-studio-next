@@ -84,9 +84,10 @@ const StyledArticle = styled.article`
   text-align: center;
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h1`
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 1.3rem;
 `;
 
 const StyledParagraph = styled.p``;
@@ -97,8 +98,8 @@ const Coaching = () => {
       <ArticleContainer>
         <StyledHeader>szkolenia</StyledHeader>
         <StyledArticle>
-          <StyledParagraph>Jak zostać stylistką rzęs? </StyledParagraph>
-          <StyledParagraph>Jak nauczyć się przedłużać rzęsy?</StyledParagraph>
+          <StyledParagraph><strong>Jak zostać stylistką rzęs?</strong> </StyledParagraph>
+          <StyledParagraph><strong>Jak nauczyć się przedłużać rzęsy?</strong></StyledParagraph>
           <StyledParagraph>Chciałabyś zdobyć nowy zawód?</StyledParagraph>
           <StyledParagraph>Szukasz pracy dodatkowej?</StyledParagraph>
           <StyledParagraph>
@@ -110,6 +111,9 @@ const Coaching = () => {
           <StyledParagraph>
             Jakikolwiek jest powód tego, że tu zaglądasz... Jeżeli szukasz profesjonalnego oraz
             efektywnego szkolenia w województwie Opolskim to jesteś w najlepszym miejscu !
+          </StyledParagraph>
+          <StyledParagraph>
+            Prowadzę <strong> szkolenia w wojewódzctwie Opolskim z przedłużania rzęs</strong>. Szkolenia te prowadzę w ramach współpracy z firmą Rarity Academy. 
           </StyledParagraph>
         </StyledArticle>
         <Link href="/szkolenia" passHref>

@@ -4,6 +4,7 @@ import { useLocalStorage } from '../utils/utils';
 const InformationContainer = styled.div`
   background-color: lightgray;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
@@ -40,7 +41,7 @@ export const CookiesPopup = () => {
   if (accepted === 'not-accepted') {
     return (
       <InformationContainer>
-        <p>Ta strona, tak jak praktycznie każda w internecie, wykorzystuje ciasteczka.</p>
+        <p>Strona wykorzystuje ciasteczka aby podnieść jakość świadczonych usług.</p>
         <StyledButton onClick={() => setAccepted('accepted')}>Rozumiem</StyledButton>
       </InformationContainer>
     );

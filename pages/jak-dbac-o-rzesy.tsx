@@ -20,12 +20,12 @@ const PageContainer = styled.div`
   }
 `;
 
-const StyledHeader = styled.h5`
+const StyledHeader = styled.h1`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 150%;
   margin: 0.2rem;
 `;
@@ -146,7 +146,7 @@ function JakDbacORzesy() {
       <PageContainer>
         <NextSeo title="Jak dbać o przedłużone rzęsy aby nie wypadały kępki" description="skuteczna pielęgnacja rzęs" />
         <ImageContainer>
-          <Image src="/images/lashPages/jak-dbac-o-rzesy.png" width="600" height="750" alt="jak dbać o rzęsy" />
+          <Image src="/images/lashPages/jak-dbac-o-rzesy.png" width="600" height="750" alt="jak dbać o rzęsy" quality={100}/>
           {isMobileView && (
             <>
               <Image
@@ -154,12 +154,14 @@ function JakDbacORzesy() {
                 width="600"
                 height="750"
                 alt="jak dbać o rzęsy"
+                quality={100}
               />
               <Image
                 src="/images/lashPages/jak-dbac-o-rzesy-3.png"
                 width="600"
                 height="750"
                 alt="jak pielęgnować rzęsy"
+                quality={100}
               />
             </>
           )}

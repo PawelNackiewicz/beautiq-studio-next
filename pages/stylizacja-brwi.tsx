@@ -12,7 +12,7 @@ const EyebrowPageContainer = styled.div`
   align-items: center;
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h1`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
@@ -63,7 +63,7 @@ function StylizacjaBrwi() {
           title="Stylizacja brwi - Ozimek, okolice Opola"
           description="stylizacja rzęs - ozimek"
         />
-        <Image src="/images/browsPage/brwi.jpg" width="600" height="360" alt='stylizacja brwi'/>
+        <Image src="/images/browsPage/brwi.jpg" width="600" height="360" alt='stylizacja brwi' quality={100}/>
         <StyledArticle>
           <StyledHeader>Stylizacja brwi</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>

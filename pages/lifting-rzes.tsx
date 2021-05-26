@@ -10,12 +10,12 @@ const LiftingPageContainer = styled.div`
   padding: 1rem 0;
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h1`
   text-align: center;
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 150%;
   margin: 0.3rem;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ function LiftingRzes() {
     <Layout title="Lifting rzęs">
       <LiftingPageContainer>
         <NextSeo title="Lifting rzęs - Ozimek, okolice Opola" description="laminacja rzęs" />
-        <Image src="/images/lashPages/lifting-rzes.jpg" width="1000" height="700" alt="lifting rzęs" />
+        <Image src="/images/lashPages/lifting-rzes.jpg" width="1000" height="700" alt="lifting rzęs" quality={100}/>
         <StyledArticle>
           <StyledHeader>Lifting rzęs</StyledHeader>
           <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
