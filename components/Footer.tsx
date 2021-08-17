@@ -156,7 +156,7 @@ const Footer = React.memo(() => {
       <AddressContainer>
         <AddressWrapper>
           <StudioName>BeautiQ Studio</StudioName>
-          <span>Częstochowska 15</span>
+          <span>Częstochowska 15a</span>
           <span>46-040 Ozimek</span>
           <span>533 571 754</span>
         </AddressWrapper>

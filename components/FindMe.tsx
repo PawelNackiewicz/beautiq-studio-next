@@ -40,7 +40,7 @@ const FindMe = () => {
           <Image src="/brand/logo.png" width="172" height="52" alt="logo" />
         </LogoContainer>
         <p>BeautiQ Studio</p>
-        <p>Częstochowska 15</p>
+        <p>Częstochowska 15a</p>
         <p>46-040 Ozimek</p>
         <p>533 571 745</p>
       </InformationContainer>
