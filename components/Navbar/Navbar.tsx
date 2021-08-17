@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
-import Dropdown from './Dropdown';
 import Logo from './Logo';
 import NavbarLinks from './NavLinks';
 
 const Navigation = styled.nav`
   height: 10vh;
+  max-height: 200px;
   display: flex;
   position: relative;
   justify-content: space-between;
