@@ -73,8 +73,7 @@ const NavItemButoon = styled.button`
     z-index: 6;
     display: flex;
   }
-  
-`
+`;
 
 const NavItemLink = styled.a`
   text-decoration: none;
@@ -88,6 +87,7 @@ const NavItemLink = styled.a`
   font-size: 17px;
   line-height: 21px;
   cursor: pointer;
+  text-transform: uppercase;
   :after {
     position: absolute;
     bottom: 0;
@@ -151,6 +151,11 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
 
   return (
     <StyledList>
+      <NavItem>
+        <Link href="/makijaz-permanentny" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>Makijaż Permanentny</NavItemLink>
+        </Link>
+      </NavItem>
       <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
         <NavItemButoon>RZĘSY</NavItemButoon>
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}
