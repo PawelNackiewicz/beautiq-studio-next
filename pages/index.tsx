@@ -175,14 +175,14 @@ export default function Home({ images }: InferGetStaticPropsType<typeof getStati
               />
             </a>
             <a
-              href="https://www.instagram.com/beautiq_studio_natalia_golomb/?hl=pl"
+              href="https://www.instagram.com/natalia.golomb/?hl=pl"
               target="_blank"
               rel="noreferrer"
             >
               {' '}
               <Image
                 src="/icons/instagram.png"
-                alt="https://www.instagram.com/beautiq_studio_natalia_golomb"
+                alt="https://www.instagram.com/natalia.golomb"
                 width="30"
                 height="30"
               />

@@ -43,7 +43,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
           </Slider>
         </CarouselProvider>
         <InstagramLink
-          href="https://www.instagram.com/beautiq_studio_natalia_golomb"
+          href="https://www.instagram.com/natalia.golomb"
           target="_blank"
           rel="noreferrer"
         >
