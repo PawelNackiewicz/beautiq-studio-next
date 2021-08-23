@@ -6,38 +6,34 @@ import Layout from '../components/Layout';
 import {
   StyledArticle,
   StyledHeader,
-  StyledDescriptionHeader,
+  StyledSectionHeader,
   StyledLogoContainer,
   StyledSection,
+  PageContainer,
+  StyledStep,
+  StyledImageWrapper,
 } from '../styles/index';
-
-const EyebrowPageContainer = styled.div`
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const StyledStep = styled.p`
-  font-family: 'Courgette', cursive;
-  text-align: center;
-  font-size: 30px;
-`;
 
 function StylizacjaBrwi() {
   return (
     <Layout title="Stylizacja brwi">
-      <EyebrowPageContainer>
+      <PageContainer>
         <NextSeo
           title="Stylizacja brwi - Ozimek, okolice Opola"
           description="stylizacja rzęs - ozimek"
         />
-        <Image src="/images/browsPage/brwi.jpg" width="600" height="360" alt='stylizacja brwi' quality={100}/>
+        <StyledImageWrapper>
+          <Image
+            src="/images/browsPage/brwi.jpg"
+            width="600"
+            height="360"
+            alt="stylizacja brwi"
+            quality={100}
+          />
+        </StyledImageWrapper>
         <StyledArticle>
           <StyledHeader>Stylizacja brwi</StyledHeader>
-          <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
+          <StyledSectionHeader>Dla kogo?</StyledSectionHeader>
           <StyledSection>
             Dla każdego, kto nie jest zadowolony z kształtu, koloru czy kondycji swoich brwi.
           </StyledSection>
@@ -91,7 +87,7 @@ function StylizacjaBrwi() {
             zabieg regeneracyjny.
           </StyledSection>
         </StyledArticle>
-      </EyebrowPageContainer>
+      </PageContainer>
     </Layout>
   );
 }

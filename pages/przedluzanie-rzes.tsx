@@ -11,30 +11,10 @@ import {
   PageContainer,
   StyledLogoContainer,
   StyledLink,
+  StyledSectionHeader,
+  StyledLinkContainer,
+  StyledSection,
 } from '../styles/index';
-
-const StyledSection = styled.section`
-  line-height: 170%;
-  margin-bottom: 1rem;
-`;
-const StyledLinkContainer = styled.div`
-  margin: auto;
-  max-width: 600px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const StyledSectionHeader = styled.h2`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 150%;
-  margin: 0.3rem;
-`;
 
 function PrzedluzanieRzes() {
   return (

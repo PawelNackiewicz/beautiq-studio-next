@@ -4,11 +4,11 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
 import {
-  StyledArticle,
+  StyledSection,
 } from '../styles/index';
 
 const AboutMePageContainer = styled.div`
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   padding: 1rem 0;
@@ -18,9 +18,11 @@ const AboutMePageContainer = styled.div`
   }
 `;
 
-const StyledSection = styled.section`
-  line-height: 160%;
-  margin-bottom: 1rem;
+export const StyledArticle = styled.article`
+  max-width: 670px;
+  margin: auto;
+  font-size: 1.4rem;
+  padding: 1rem;
 `;
 
 function NataliaGolomb() {

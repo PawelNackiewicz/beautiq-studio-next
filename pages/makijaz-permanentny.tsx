@@ -3,37 +3,15 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
-
 import {
   PageContainer,
   StyledArticle,
   StyledLogoContainer,
+  StyledSectionHeader,
+  StyledSection,
+  StyledHeader,
+  StyledImageWrapper,
 } from '../styles/index';
-
-
-const StyledHeader = styled.h1`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 150%;
-  margin: 0.3rem;
-  text-transform: uppercase;
-`;
-
-const StyledSection = styled.section`
-  line-height: 170%;
-  margin-bottom: 1rem;
-`;
-
-const StyledDescriptionHeader = styled.h6`
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
-`;
 
 const StyledList = styled.ul``;
 const StyledListElement = styled.li``;
@@ -46,16 +24,18 @@ function MakijazPermanentny() {
           title="Makijaż permanentny - Ozimek, okolice Opola"
           description="makijaż permanentny brwi"
         />
-        <Image
-          src="/images/makijazPermanentny/makijaz-permanentny.jpeg"
-          width="800"
-          height="600"
-          alt="Makijaż permanentny"
-          quality={100}
-        />
+        <StyledImageWrapper>
+          <Image
+            src="/images/makijazPermanentny/makijaz-permanentny.jpeg"
+            width="800"
+            height="600"
+            alt="Makijaż permanentny"
+            quality={100}
+          />
+        </StyledImageWrapper>
         <StyledArticle>
           <StyledHeader>Makijaż permanentny brwi</StyledHeader>
-          <StyledDescriptionHeader>Czym jest makijaż permanentny brwi?</StyledDescriptionHeader>
+          <StyledSectionHeader>Czym jest makijaż permanentny brwi?</StyledSectionHeader>
           <StyledSection>
             Jest to sposób na uzyskanie trwałego efektu makijażu brwi bez codziennego jego
             wykonywania. Za pomocą różnych technik mikropigmentacji możemy uzyskać efekt pięknych,
@@ -67,9 +47,7 @@ function MakijazPermanentny() {
             mikropigmentacji. Podczas zabiegu, linergistka bardzo dużą uwagę zwraca na perfekcyjny
             rysunek wstępny brwi. Kolor pigmentu oraz kształt jest konsultowany zawsze z klientką.
           </StyledSection>
-          <StyledDescriptionHeader>
-            Jakie są wskazania do makijażu permanentnego?
-          </StyledDescriptionHeader>
+          <StyledSectionHeader>Jakie są wskazania do makijażu permanentnego?</StyledSectionHeader>
           <StyledList>
             <StyledListElement>Trudność w samodzielnym wykonywaniu makijażu brwi</StyledListElement>
             <StyledListElement>Brak włosków lub niewielka ilość</StyledListElement>

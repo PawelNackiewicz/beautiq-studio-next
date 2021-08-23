@@ -1,20 +1,36 @@
 import styled from 'styled-components';
 
 export const PageContainerFlex = styled.div`
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
+  margin: auto;
+  padding: 1rem 0;
+
   p {
     margin: 0;
   }
 `;
 
 export const PageContainer = styled.div`
-max-width: 800px;
-margin: auto;
-padding: 1rem 0;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem 0;
+`;
+
+export const StyledImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+
+export const StyledStep = styled.p`
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  font-size: 30px;
 `;
 
 export const StyledHeader = styled.h1`
@@ -32,11 +48,17 @@ export const StyledArticle = styled.article`
   grid-area: article;
   max-width: 600px;
   margin: auto;
-  font-size: 19px;
+  font-size: 1.4rem;
   padding: 1rem;
 `;
 
 export const StyledSection = styled.section`
+  line-height: 170%;
+  margin-bottom: 1rem;
+  text-align: center;
+`;
+
+export const StyledSectionCenter = styled.section`
   line-height: 170%;
   margin-bottom: 1rem;
   text-align: center;
@@ -48,11 +70,11 @@ export const StyledLogoContainer = styled.div`
   margin-bottom: 2rem;
 `;
 
-export const StyledDescriptionHeader = styled.p`
+export const StyledSectionHeader = styled.h2`
   font-family: Ubuntu sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 150%;
   text-align: center;
 `;

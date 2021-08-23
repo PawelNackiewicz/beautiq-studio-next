@@ -10,42 +10,21 @@ import {
   StyledLink,
   StyledLinkContainer,
   StyledLogoContainer,
+  StyledSection,
+  StyledStep,
+  StyledSectionHeader,
+  PageContainer,
 } from '../styles/index';
-
-const LiftingPageContainer = styled.div`
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem 0;
-`;
-
-const StyledStep = styled.p`
-  font-family: 'Courgette', cursive;
-  text-align: center;
-  font-size: 30px;
-`;
-
-const StyledSection = styled.section`
-  line-height: 170%;
-  margin-bottom: 1rem;
-`;
-
-const StyledDescriptionHeader = styled.h6`
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
-`;
 
 function LiftingRzes() {
   return (
     <Layout title="Lifting rzęs">
-      <LiftingPageContainer>
+      <PageContainer>
         <NextSeo title="Lifting rzęs - Ozimek, okolice Opola" description="laminacja rzęs" />
         <Image src="/images/lashPages/lifting-rzes.jpg" width="1000" height="700" alt="lifting rzęs" quality={100}/>
         <StyledArticle>
           <StyledHeader>Lifting rzęs</StyledHeader>
-          <StyledDescriptionHeader>Dla kogo?</StyledDescriptionHeader>
+          <StyledSectionHeader>Dla kogo?</StyledSectionHeader>
           <StyledSection>
             Dla osób, które cenią sobie naturalność i wygodę oraz nie chcą się ograniczać. Dla osób
             które posiadają proste, grube i oporne rzęsy. Dla osób, które nie lubią, nie chcą bądź
@@ -99,7 +78,7 @@ function LiftingRzes() {
             <StyledLink>Jak dbać o rzęsy</StyledLink>
           </Link>
         </StyledLinkContainer>
-      </LiftingPageContainer>
+      </PageContainer>
     </Layout>
   );
 }

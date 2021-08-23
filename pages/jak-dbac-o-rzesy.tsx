@@ -5,12 +5,12 @@ import Layout from '../components/Layout';
 import {
   ImageContainer,
   StyledArticle,
-  StyledDescriptionHeader,
+  StyledSectionHeader,
   StyledHeader,
   StyledLink,
   StyledLinkContainer,
   StyledLogoContainer,
-  StyledSection,
+  StyledSectionCenter,
 } from '../styles/index';
 import styled from 'styled-components';
 
@@ -72,8 +72,8 @@ function JakDbacORzesy() {
         </ImageContainer>
         <StyledArticle>
           <StyledHeader>Zasady pielęgnacji rzęs</StyledHeader>
-          <StyledDescriptionHeader>Do 48 godzin po zabiegu</StyledDescriptionHeader>
-          <StyledSection>
+          <StyledSectionHeader>Do 48 godzin po zabiegu</StyledSectionHeader>
+          <StyledSectionCenter>
             <p>• Unikać pocierania rzęs</p>
             <p>
               {' '}
@@ -91,9 +91,9 @@ function JakDbacORzesy() {
               • Spać na plecach oraz nie dotykać rzęs, aby nie powyginały się w trakcie wiązania
               kleju
             </p>
-          </StyledSection>
-          <StyledDescriptionHeader>Po 48 godzinach po zabiegu</StyledDescriptionHeader>
-          <StyledSection>
+          </StyledSectionCenter>
+          <StyledSectionHeader>Po 48 godzinach po zabiegu</StyledSectionHeader>
+          <StyledSectionCenter>
             <p>• Unikać nadmiernego pocierania rzęs</p>
             <p>
               • Unikać makijażu oczu a jeżeli jest to niemożliwe, unikać kosmetyków wodoodpornych a
@@ -118,8 +118,8 @@ function JakDbacORzesy() {
             </p>
             <p>• Nie stosować zalotki- grozi to połamaniem rzęs</p>
             <p>• Ograniczyć spanie na brzuchu</p>
-          </StyledSection>
-          <StyledSection>
+          </StyledSectionCenter>
+          <StyledSectionCenter>
             Sztuczne rzęsy wykonane są z wysokiej jakości syntetycznego materiału idealnie
             imitującego naturalną rzęsę. Prawidłowa aplikacja sztucznych rzęs nie powoduje
             dyskomfortu. Właściwie dobrane rzęsy nie ciągną, nie czujemy ich ciężaru. Cykl życia
@@ -133,11 +133,11 @@ function JakDbacORzesy() {
             aplikację w przypadku nie stosowania się do powyższych zaleceń- reklamacje nie będą
             uwzględniane. Reklamację uwzględniam do tygodnia po zabiegu. Tylko w przypadku
             nietrwałej aplikacji.
-          </StyledSection>
-          <StyledDescriptionHeader>
+          </StyledSectionCenter>
+          <StyledSectionHeader>
             Jak należy przygotować się do aplikacji rzęs (dotyczy również uzupełnień)
-          </StyledDescriptionHeader>
-          <StyledSection>
+          </StyledSectionHeader>
+          <StyledSectionCenter>
             <p>
               {' '}
               • Przed zabiegiem proszę o przyjście z oczyszczoną twarzą (żadnego makijażu oczu oraz
@@ -165,7 +165,7 @@ function JakDbacORzesy() {
               • Zabieg przedłużania rzęs służy do podkreślenia oprawy naszych oczu, dlatego warto
               zastanawiać się jaki efekt końcowy chcemy uzyskać.
             </p>
-          </StyledSection>
+          </StyledSectionCenter>
         </StyledArticle>
         <StyledLinkContainer>
           <StyledLogoContainer>
