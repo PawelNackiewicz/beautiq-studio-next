@@ -4,21 +4,18 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
+import {
+  StyledArticle,
+  StyledHeader,
+  StyledLink,
+  StyledLinkContainer,
+  StyledLogoContainer,
+} from '../styles/index';
+
 const LiftingPageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
   padding: 1rem 0;
-`;
-
-const StyledHeader = styled.h1`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 150%;
-  margin: 0.3rem;
-  text-transform: uppercase;
 `;
 
 const StyledStep = styled.p`
@@ -27,22 +24,9 @@ const StyledStep = styled.p`
   font-size: 30px;
 `;
 
-const StyledArticle = styled.article`
-  max-width: 600px;
-  margin: auto;
-  font-size: 19px;
-  padding: 1rem;
-`;
-
 const StyledSection = styled.section`
   line-height: 170%;
   margin-bottom: 1rem;
-`;
-
-const StyledLogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
 `;
 
 const StyledDescriptionHeader = styled.h6`
@@ -51,72 +35,6 @@ const StyledDescriptionHeader = styled.h6`
   font-weight: bold;
   font-size: 20px;
   line-height: 150%;
-`;
-
-const StyledLink = styled.a`
-  width: 300px;
-  text-align: center;
-  margin: 5px 0;
-  position: relative;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  letter-spacing: 2px;
-  font-size: 20px;
-  cursor: pointer;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #c4a747;
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-
-  &:hover:before {
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid #c4a747;
-    box-sizing: border-box;
-
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:hover:after {
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-`;
-
-const StyledLinkContainer = styled.div`
-  margin: auto;
-  max-width: 600px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 `;
 
 function LiftingRzes() {

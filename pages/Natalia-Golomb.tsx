@@ -3,6 +3,10 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
+import {
+  StyledArticle,
+} from '../styles/index';
+
 const AboutMePageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
@@ -12,13 +16,6 @@ const AboutMePageContainer = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
   }
-`;
-
-const StyledArticle = styled.article`
-  max-width: 500px;
-  margin: auto;
-  font-size: 16px;
-  padding: 0.5rem;
 `;
 
 const StyledSection = styled.section`

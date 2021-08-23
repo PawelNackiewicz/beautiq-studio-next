@@ -3,6 +3,14 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
+import {
+  StyledArticle,
+  StyledHeader,
+  StyledDescriptionHeader,
+  StyledLogoContainer,
+  StyledSection,
+} from '../styles/index';
+
 const EyebrowPageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
@@ -12,47 +20,10 @@ const EyebrowPageContainer = styled.div`
   align-items: center;
 `;
 
-const StyledHeader = styled.h1`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 150%;
-  margin: 0.3rem;
-  text-transform: uppercase;
-`;
-
 const StyledStep = styled.p`
   font-family: 'Courgette', cursive;
   text-align: center;
   font-size: 30px;
-`;
-
-const StyledArticle = styled.article`
-  max-width: 600px;
-  margin: auto;
-  font-size: 19px;
-  padding: 1rem;
-`;
-
-const StyledSection = styled.section`
-  line-height: 170%;
-  margin-bottom: 1rem;
-`;
-
-const StyledLogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-`;
-
-const StyledDescriptionHeader = styled.p`
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
 `;
 
 function StylizacjaBrwi() {

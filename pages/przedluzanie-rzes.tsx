@@ -5,21 +5,25 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
-const EyelashExtensionsPageContainer = styled.div`
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem 0;
-`;
+import {
+  StyledArticle,
+  StyledHeader,
+  PageContainer,
+  StyledLogoContainer,
+  StyledLink,
+} from '../styles/index';
 
-const StyledHeader = styled.h1`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 150%;
-  margin: 0.3rem;
-  text-transform: uppercase;
+const StyledSection = styled.section`
+  line-height: 170%;
+  margin-bottom: 1rem;
+`;
+const StyledLinkContainer = styled.div`
+  margin: auto;
+  max-width: 600px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const StyledSectionHeader = styled.h2`
@@ -32,94 +36,10 @@ const StyledSectionHeader = styled.h2`
   margin: 0.3rem;
 `;
 
-const StyledArticle = styled.article`
-  max-width: 600px;
-  margin: auto;
-  font-size: 19px;
-  padding: 1rem;
-`;
-
-const StyledSection = styled.section`
-  line-height: 170%;
-  margin-bottom: 1rem;
-`;
-
-const StyledLogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-`;
-
-const StyledLink = styled.a`
-  width: 300px;
-  text-align: center;
-  margin: 5px 0;
-  position: relative;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  letter-spacing: 2px;
-  font-size: 20px;
-  cursor: pointer;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #c4a747;
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-
-  &:hover:before {
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid #c4a747;
-    box-sizing: border-box;
-
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:hover:after {
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-`;
-
-const StyledLinkContainer = styled.div`
-  margin: auto;
-  max-width: 600px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-
 function PrzedluzanieRzes() {
   return (
     <Layout title="Przedłużanie rzęs">
-      <EyelashExtensionsPageContainer>
+      <PageContainer>
         <NextSeo title="Przedłużanie rzęs - Ozimek" description="stylizacja rzęs - ozimek" />
         <Image src="/images/lashPages/przedluzanie-rzes.jpg" width="1000" height="700" alt="przedłużanie rzęs" quality={100}/>
         <StyledArticle>
@@ -174,7 +94,7 @@ function PrzedluzanieRzes() {
             <StyledLink>Jak dbać o rzęsy</StyledLink>
           </Link>
         </StyledLinkContainer>
-      </EyelashExtensionsPageContainer>
+      </PageContainer>
     </Layout>
   );
 }

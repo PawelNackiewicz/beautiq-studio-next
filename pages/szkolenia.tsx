@@ -3,6 +3,13 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
+import {
+  StyledArticle,
+  StyledHeader,
+  StyledSection,
+  StyledLink,
+} from '../styles/index';
+
 const PageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
@@ -10,29 +17,6 @@ const PageContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-`;
-
-const StyledHeader = styled.h1`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 150%;
-  margin: 0.3rem;
-  text-transform: uppercase;
-`;
-
-const StyledArticle = styled.article`
-  max-width: 500px;
-  margin: auto;
-  font-size: 16px;
-  padding: 0.5rem;
-`;
-
-const StyledSection = styled.section`
-  line-height: 160%;
-  margin-bottom: 1rem;
 `;
 
 const StyledSectionHeader = styled.h2`
@@ -45,62 +29,9 @@ const StyledSectionHeader = styled.h2`
   margin: 0.3rem;
 `;
 
-const StyledLink = styled.a`
+const StyledLinkParagraph = styled.a`
   text-decoration: none;
-`;
-
-const StyledLinkItem = styled.p`
-  position: relative;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  letter-spacing: 1px;
-  font-size: 12px;
-  cursor: pointer;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #c4a747;
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-
-  &:hover:before {
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid #c4a747;
-    box-sizing: border-box;
-
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:hover:after {
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
+  margin-bottom: 3rem;
 `;
 
 function Szkolenia() {
@@ -166,9 +97,9 @@ function Szkolenia() {
             zapraszam Cię do kontaktu :-)
           </StyledSection>
         </StyledArticle>
-        <StyledLink href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
-          <StyledLinkItem>Zapisz się na szkolenie</StyledLinkItem>
-        </StyledLink>
+        <StyledLinkParagraph href="https://rarityacademy.pl/natalia-golomb" target="_blank" rel="noreferrer">
+          <StyledLink>Zapisz się na szkolenie</StyledLink>
+        </StyledLinkParagraph>
       </PageContainer>
     </Layout>
   );

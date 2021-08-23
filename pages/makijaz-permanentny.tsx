@@ -3,11 +3,13 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 
-const LiftingPageContainer = styled.div`
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem 0;
-`;
+
+import {
+  PageContainer,
+  StyledArticle,
+  StyledLogoContainer,
+} from '../styles/index';
+
 
 const StyledHeader = styled.h1`
   text-align: center;
@@ -20,22 +22,9 @@ const StyledHeader = styled.h1`
   text-transform: uppercase;
 `;
 
-const StyledArticle = styled.article`
-  max-width: 600px;
-  margin: auto;
-  font-size: 19px;
-  padding: 1rem;
-`;
-
 const StyledSection = styled.section`
   line-height: 170%;
   margin-bottom: 1rem;
-`;
-
-const StyledLogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
 `;
 
 const StyledDescriptionHeader = styled.h6`
@@ -52,7 +41,7 @@ const StyledListElement = styled.li``;
 function MakijazPermanentny() {
   return (
     <Layout title="Makijaż permanentny">
-      <LiftingPageContainer>
+      <PageContainer>
         <NextSeo
           title="Makijaż permanentny - Ozimek, okolice Opola"
           description="makijaż permanentny brwi"
@@ -99,7 +88,7 @@ function MakijazPermanentny() {
         <StyledLogoContainer>
           <Image src="/brand/mark.png" width="48" height="84" />
         </StyledLogoContainer>
-      </LiftingPageContainer>
+      </PageContainer>
     </Layout>
   );
 }

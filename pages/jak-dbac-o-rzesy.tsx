@@ -1,138 +1,33 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
+import {
+  ImageContainer,
+  StyledArticle,
+  StyledDescriptionHeader,
+  StyledHeader,
+  StyledLink,
+  StyledLinkContainer,
+  StyledLogoContainer,
+  StyledSection,
+} from '../styles/index';
+import styled from 'styled-components';
 
-const PageContainer = styled.div`
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'images article'
-    'links links';
+export const PageContainer = styled.div`
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+  'images article'
+  'links links';
 
-  @media (max-width: 1050px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
-
-const StyledHeader = styled.h1`
-  text-align: center;
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 150%;
-  margin: 0.2rem;
-`;
-
-const StyledArticle = styled.article`
-  grid-area: article;
-  max-width: 600px;
-  margin: auto;
-  font-size: 19px;
-  padding: 1rem;
-`;
-
-const StyledSection = styled.section`
-  line-height: 170%;
-  margin-bottom: 1rem;
-  text-align: center;
-`;
-
-const StyledLogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-`;
-
-const StyledDescriptionHeader = styled.p`
-  font-family: Ubuntu sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
-  text-align: center;
-`;
-
-const StyledLink = styled.a`
-  width: 300px;
-  text-align: center;
-  margin: 5px 0;
-  position: relative;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  letter-spacing: 2px;
-  font-size: 20px;
-  cursor: pointer;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #c4a747;
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-
-  &:hover:before {
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid #c4a747;
-    box-sizing: border-box;
-
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: top left;
-    transform: scale(1);
-  }
-
-  &:hover:after {
-    transition: transform 0.5s;
-    transform-origin: bottom right;
-    transform: scale(0);
-  }
-`;
-
-const StyledLinkContainer = styled.div`
-  grid-area: links;
-  margin: auto;
-  max-width: 600px;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const ImageContainer = styled.div`
-  grid-area: images;
-  max-width: 600px;
-  padding: 2rem 0;
+@media (max-width: 1050px) {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
 `;
 
 function JakDbacORzesy() {
@@ -144,9 +39,18 @@ function JakDbacORzesy() {
   return (
     <Layout title="Jak dbać o rzęsy">
       <PageContainer>
-        <NextSeo title="Jak dbać o przedłużone rzęsy aby nie wypadały kępki" description="skuteczna pielęgnacja rzęs" />
+        <NextSeo
+          title="Jak dbać o przedłużone rzęsy aby nie wypadały kępki"
+          description="skuteczna pielęgnacja rzęs"
+        />
         <ImageContainer>
-          <Image src="/images/lashPages/jak-dbac-o-rzesy.png" width="600" height="750" alt="jak dbać o rzęsy" quality={100}/>
+          <Image
+            src="/images/lashPages/jak-dbac-o-rzesy.png"
+            width="600"
+            height="750"
+            alt="jak dbać o rzęsy"
+            quality={100}
+          />
           {isMobileView && (
             <>
               <Image
