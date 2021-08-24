@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
+import { questions } from '../content/faq';
 
 import {
   PageContainer,
@@ -12,6 +13,7 @@ import {
   StyledHeader,
   StyledImageWrapper,
 } from '../styles/index';
+import { Accordion } from '../components/Accordion/Accordion';
 
 const StyledList = styled.ul``;
 const StyledListElement = styled.li``;
@@ -62,6 +64,10 @@ function MakijazPermanentny() {
               się na pewno!
             </StyledListElement>
           </StyledList>
+          <StyledSectionHeader>Najczęściej zadawane pytania.</StyledSectionHeader>
+          {questions.map((item) => (
+            <Accordion key={item.id} question={item.header} answer={item.body} />
+          ))}
         </StyledArticle>
         <StyledLogoContainer>
           <Image src="/brand/mark.png" width="48" height="84" />
