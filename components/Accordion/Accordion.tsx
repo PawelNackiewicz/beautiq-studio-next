@@ -72,9 +72,9 @@ export function Accordion({ question, answer }: AccordionProps) {
       <StyledQuestion onClick={() => setToggleShow(!toggleShow)}>
         <h3>{question}</h3>
         {toggleShow ? (
-          <img src="/icons/up-chevron.png" alt="Close" />
+          <img src="/icons/up-chevron.png" alt="Close" width='24px' height='24px'/>
         ) : (
-          <img src="/icons/down-chevron.png" alt="Open" />
+          <img src="/icons/down-chevron.png" alt="Open" width='24px' height='24px'/>
         )}
       </StyledQuestion>
       <StyledAnswer>
