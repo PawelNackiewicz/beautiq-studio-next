@@ -60,7 +60,7 @@ function Cennik() {
       <PriceListWrapper>
         <NextSeo title="Cennik - pełna oferta salonu BeautiQ Studio" description="Oferta - BeautiQ Studio - Natalia Golomb" />
         <PriceListTitle id="cennik">Cennik</PriceListTitle>
-        <StyledOfferName>Przedłużanie i zagęszczenie rzęs</StyledOfferName>
+        <StyledOfferName>Przedłużanie i zagęszczenie rzęs - NATALIA</StyledOfferName>
         <StyledTable>
           <thead>
             <tr>
@@ -72,18 +72,18 @@ function Cennik() {
           <tbody>
             <tr>
               <td>Metoda 1:1</td>
-              <td>170 zł</td>
-              <td>150 zł</td>
-            </tr>
-            <tr>
-              <td>Metoda 2D -3D</td>
               <td>180 zł</td>
               <td>160 zł</td>
             </tr>
             <tr>
-              <td>Metoda 4-6D</td>
+              <td>Metoda 2D -3D</td>
               <td>190 zł</td>
               <td>170 zł</td>
+            </tr>
+            <tr>
+              <td>Metoda 4-6D</td>
+              <td>200 zł</td>
+              <td>180 zł</td>
             </tr>
             <tr>
               <td>Mega Volume</td>
@@ -92,8 +92,40 @@ function Cennik() {
             </tr>
             <tr>
               <td>Lifting rzęs</td>
-              <td>150zł</td>
+              <td>160zł</td>
               <td />
+            </tr>
+            <tr>
+              <td>Ściągnięcie rzęs</td>
+              <td>30zł</td>
+              <td />
+            </tr>
+          </tbody>
+        </StyledTable>
+        <StyledOfferName>Przedłużanie i zagęszczenie rzęs - WIKTORIA</StyledOfferName>
+        <StyledTable>
+          <thead>
+            <tr>
+              <th />
+              <th>Pierwsza aplikacja</th>
+              <th>Uzupełnienie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Metoda 1:1</td>
+              <td>160 zł</td>
+              <td>140 zł</td>
+            </tr>
+            <tr>
+              <td>Metoda 2D -3D</td>
+              <td>170 zł</td>
+              <td>150 zł</td>
+            </tr>
+            <tr>
+              <td>Metoda 4-6D</td>
+              <td>180 zł</td>
+              <td>160 zł</td>
             </tr>
             <tr>
               <td>Ściągnięcie rzęs</td>
@@ -115,20 +147,16 @@ function Cennik() {
         <StyledTable>
           <tbody>
             <tr>
-              <td>BROW HENNA / Henna pudrowa</td>
-              <td>60 zł</td>
-            </tr>
-            <tr>
-              <td>Henna + regulacja</td>
-              <td>30 zł</td>
+              <td>Profesjonalna stylizacja brwi henną pudrową</td>
+              <td>80 zł</td>
             </tr>
             <tr>
               <td>Regulacja brwi (pęseta + LYCON WAX)</td>
-              <td>20 zł</td>
+              <td>30 zł</td>
             </tr>
             <tr>
               <td>Męska naturalna stylizacja brwi</td>
-              <td>40 zł</td>
+              <td>50 zł</td>
             </tr>
           </tbody>
         </StyledTable>
@@ -141,7 +169,7 @@ function Cennik() {
             </tr>
             <tr>
               <td>Larens Profesional + mezoterapia mikroigłowa</td>
-              <td>250 zł</td>
+              <td>300 zł</td>
             </tr>
             <tr>
               <td>Terapia Estgen</td>
@@ -149,7 +177,7 @@ function Cennik() {
             </tr>
             <tr>
               <td>Terapia Estgen + mezoterapia mikroigłowa</td>
-              <td>250 zł</td>
+              <td>300 zł</td>
             </tr>
             <tr>
               <td>Biorepeel Cl3</td>
@@ -157,7 +185,7 @@ function Cennik() {
             </tr>
             <tr>
               <td>Biorepeel Cl3 + mezoterapia mikroigłowa</td>
-              <td>300 zł</td>
+              <td>350 zł</td>
             </tr>
           </tbody>
         </StyledTable>
@@ -175,31 +203,6 @@ function Cennik() {
             <tr>
               <td>PAKIET: depilacja wąsika i brody</td>
               <td>40 zł</td>
-            </tr>
-          </tbody>
-        </StyledTable>
-        <StyledOfferName>Mezoterapia mikroigłowa</StyledOfferName>
-        <StyledTable>
-          <tbody>
-            <tr>
-              <td>Mezoterapia mikro (twarz)</td>
-              <td>250 zł</td>
-            </tr>
-            <tr>
-              <td>Mezoterapia mikro (twarz, szyja, dekolt)</td>
-              <td>300 zł</td>
-            </tr>
-            <tr>
-              <td>Estgen + sonoforeza</td>
-              <td>190 zł</td>
-            </tr>
-            <tr>
-              <td>Estgen + mezoterapia mikro (twarz)</td>
-              <td>350 zł</td>
-            </tr>
-            <tr>
-              <td>Estgen + mezoterapia mikro (twarz, szyja, dekolt)</td>
-              <td>400 zł</td>
             </tr>
           </tbody>
         </StyledTable>
