@@ -6,7 +6,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { DefaultSeo } from 'next-seo';
 import { CookiesPopup } from './CookiesPopup';
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 import * as gtag from "../lib/gtag";
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -38,7 +38,12 @@ const meta = {
     'Stylizacja rzęs i brwi w Ozimku koło Opola. Makijaż permamenty oraz szkolenia z przedłużania rzęs. Zabiegi na twarz i wiele więcej...',
 };
 
-export default function Layout({ children, title = 'BeautiQ Studio - Natalia Golomb' }: any) {
+interface LayoutProps {
+  children: ReactNode,
+  title: string
+}
+
+export default function Layout({ children, title = 'BeautiQ Studio - Natalia Golomb' }: LayoutProps) {
   const router = useRouter();
 
   useEffect(() => {
