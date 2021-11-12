@@ -5,7 +5,7 @@ import NavbarLinks from './NavLinks';
 
 const Navigation = styled.nav`
   height: 10vh;
-  max-height: 200px;
+  max-height: 100px;
   display: flex;
   position: relative;
   justify-content: space-between;
