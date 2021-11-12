@@ -40,7 +40,7 @@ const meta = {
 
 interface LayoutProps {
   children: ReactNode,
-  title: string
+  title?: string
 }
 
 export default function Layout({ children, title = 'BeautiQ Studio - Natalia Golomb' }: LayoutProps) {
