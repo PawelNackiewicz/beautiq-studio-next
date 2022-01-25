@@ -60,7 +60,7 @@ function Cennik() {
       <PriceListWrapper>
         <NextSeo title="Cennik - pełna oferta salonu BeautiQ Studio" description="Oferta - BeautiQ Studio - Natalia Golomb" />
         <PriceListTitle id="cennik">Cennik</PriceListTitle>
-        <StyledOfferName>Przedłużanie i zagęszczenie rzęs - NATALIA</StyledOfferName>
+        <StyledOfferName>Przedłużanie i zagęszczenie rzęs</StyledOfferName>
         <StyledTable>
           <thead>
             <tr>
@@ -94,38 +94,6 @@ function Cennik() {
               <td>Lifting rzęs</td>
               <td>160zł</td>
               <td />
-            </tr>
-            <tr>
-              <td>Ściągnięcie rzęs</td>
-              <td>30zł</td>
-              <td />
-            </tr>
-          </tbody>
-        </StyledTable>
-        <StyledOfferName>Przedłużanie i zagęszczenie rzęs - WIKTORIA</StyledOfferName>
-        <StyledTable>
-          <thead>
-            <tr>
-              <th />
-              <th>Pierwsza aplikacja</th>
-              <th>Uzupełnienie</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Metoda 1:1</td>
-              <td>160 zł</td>
-              <td>140 zł</td>
-            </tr>
-            <tr>
-              <td>Metoda 2D -3D</td>
-              <td>170 zł</td>
-              <td>150 zł</td>
-            </tr>
-            <tr>
-              <td>Metoda 4-6D</td>
-              <td>180 zł</td>
-              <td>160 zł</td>
             </tr>
             <tr>
               <td>Ściągnięcie rzęs</td>
