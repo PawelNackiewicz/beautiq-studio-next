@@ -107,7 +107,7 @@ function Cennik() {
           <tbody>
             <tr>
               <td>BRWI - OMBRE BROWS</td>
-              <td>900 zł</td>
+              <td>850 zł</td>
             </tr>
           </tbody>
         </StyledTable>
