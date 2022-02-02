@@ -193,7 +193,7 @@ const Footer = React.memo(() => {
           <p>Facebook</p>
         </StyledSocialLink>
         <StyledSocialLink
-          href="https://www.instagram.com/natalia.golomb_lash.instruktor/"
+          href="https://www.instagram.com/natalia.golomb/"
           target="_blank"
           rel="noreferrer"
         >
