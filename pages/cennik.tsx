@@ -116,7 +116,7 @@ function Cennik() {
           <tbody>
             <tr>
               <td>Profesjonalna stylizacja brwi henną pudrową</td>
-              <td>80 zł</td>
+              <td>85 zł</td>
             </tr>
             <tr>
               <td>Regulacja brwi (pęseta + LYCON WAX)</td>
@@ -131,14 +131,6 @@ function Cennik() {
         <StyledOfferName>Kosmetologia pielęgnacyjna</StyledOfferName>
         <StyledTable>
           <tbody>
-            <tr>
-              <td>Larens Profesional</td>
-              <td>190 zł</td>
-            </tr>
-            <tr>
-              <td>Larens Profesional + mezoterapia mikroigłowa</td>
-              <td>300 zł</td>
-            </tr>
             <tr>
               <td>Terapia Estgen</td>
               <td>190 zł</td>
