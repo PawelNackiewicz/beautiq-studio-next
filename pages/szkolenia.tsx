@@ -89,7 +89,7 @@ function Szkolenia() {
           </StyledSectionCenter>
         </StyledArticle>
         <StyledLinkParagraph
-          href="https://rarityacademy.pl/natalia-golomb"
+          href="https://rarityacademy.pl/instruktorka/natalia-golomb"
           target="_blank"
           rel="noreferrer"
         >
