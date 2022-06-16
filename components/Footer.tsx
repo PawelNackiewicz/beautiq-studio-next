@@ -170,9 +170,6 @@ const Footer = React.memo(() => {
         </Link>
       </SiteMapContainer>
       <OfferContainer>
-      <Link href="/makijaz-permanentny" passHref>
-          <NavItem>Makijaż Permanentny</NavItem>
-        </Link>
         <Link href="/szkolenia" passHref>
           <NavItem>Szkolenia</NavItem>
         </Link>

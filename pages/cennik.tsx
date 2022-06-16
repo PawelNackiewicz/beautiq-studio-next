@@ -102,15 +102,6 @@ function Cennik() {
             </tr>
           </tbody>
         </StyledTable>
-        <StyledOfferName>Makijaż permamentny</StyledOfferName>
-        <StyledTable>
-          <tbody>
-            <tr>
-              <td>BRWI - OMBRE BROWS</td>
-              <td>850 zł</td>
-            </tr>
-          </tbody>
-        </StyledTable>
         <StyledOfferName>Profesjonalna stylizacja brwi</StyledOfferName>
         <StyledTable>
           <tbody>

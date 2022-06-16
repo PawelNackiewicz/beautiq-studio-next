@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
 const meta = {
   title: 'BeautiQ Studio - Natalia Golomb',
   description:
-    'Stylizacja rzęs i brwi w Ozimku koło Opola. Makijaż permamenty oraz szkolenia z przedłużania rzęs. Zabiegi na twarz i wiele więcej...',
+    'Stylizacja rzęs i brwi w Ozimku koło Opola. Szkolenia z przedłużania rzęs. Zabiegi na twarz i wiele więcej...',
 };
 
 interface LayoutProps {
