@@ -72,23 +72,23 @@ function Cennik() {
           <tbody>
             <tr>
               <td>Metoda 1:1</td>
-              <td>180 zł</td>
-              <td>160 zł</td>
-            </tr>
-            <tr>
-              <td>Metoda 2D -3D</td>
-              <td>190 zł</td>
-              <td>170 zł</td>
-            </tr>
-            <tr>
-              <td>Metoda 4-6D</td>
               <td>200 zł</td>
               <td>180 zł</td>
             </tr>
             <tr>
-              <td>Mega Volume</td>
+              <td>Metoda 2D -3D</td>
               <td>210 zł</td>
               <td>190 zł</td>
+            </tr>
+            <tr>
+              <td>Metoda 4-6D</td>
+              <td>220 zł</td>
+              <td>200 zł</td>
+            </tr>
+            <tr>
+              <td>Mega Volume</td>
+              <td>230 zł</td>
+              <td>210 zł</td>
             </tr>
             <tr>
               <td>Lifting rzęs</td>
@@ -107,7 +107,7 @@ function Cennik() {
           <tbody>
             <tr>
               <td>Profesjonalna stylizacja brwi henną pudrową</td>
-              <td>85 zł</td>
+              <td>90 zł</td>
             </tr>
             <tr>
               <td>Regulacja brwi (pęseta + LYCON WAX)</td>
@@ -124,19 +124,19 @@ function Cennik() {
           <tbody>
             <tr>
               <td>Terapia Estgen</td>
-              <td>190 zł</td>
+              <td>200 zł</td>
             </tr>
             <tr>
               <td>Terapia Estgen + mezoterapia mikroigłowa</td>
-              <td>300 zł</td>
+              <td>310 zł</td>
             </tr>
             <tr>
               <td>Biorepeel Cl3</td>
-              <td>240 zł</td>
+              <td>250 zł</td>
             </tr>
             <tr>
               <td>Biorepeel Cl3 + mezoterapia mikroigłowa</td>
-              <td>350 zł</td>
+              <td>360 zł</td>
             </tr>
           </tbody>
         </StyledTable>
