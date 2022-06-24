@@ -63,7 +63,7 @@ function StylizacjaBrwi() {
             poprawek kształtu.
           </StyledSection>
           <StyledLogoContainer>
-            <Image src="/brand/mark.png" width="48" height="84" />
+            <Image src="/brand/mark.png" width="48" height="84" alt='brandMark'/>
           </StyledLogoContainer>
           <StyledSection>
             Henna naturalna EKKO BEAUTY firmy NIKK MOLE, na której pracuję, powstaje w najmniej

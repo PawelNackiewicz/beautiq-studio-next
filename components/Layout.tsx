@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar/Navbar';
+import Footer from './Footer';
+import Navbar from './Navbar/Navbar';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { DefaultSeo } from 'next-seo';
 import { CookiesPopup } from './CookiesPopup';
@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
    margin: 0;
   }
 `;
+
+const GlobalStyleProxy: any = GlobalStyle;
 
 const meta = {
   title: 'BeautiQ Studio - Natalia Golomb',
@@ -82,7 +84,7 @@ export default function Layout({ children, title = 'BeautiQ Studio - Natalia Gol
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <GlobalStyle />
+      <GlobalStyleProxy />
       <Navbar />
       {children}
       <CookiesPopup />

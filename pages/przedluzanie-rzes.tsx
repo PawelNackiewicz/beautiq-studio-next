@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
@@ -58,7 +57,7 @@ function PrzedluzanieRzes() {
             noszeniu mocniejszych aplikacji, rzęsy naturalne mogą się osłabić.{' '}
           </StyledSection>
           <StyledLogoContainer>
-            <Image src="/brand/mark.png" width="48" height="84" />
+            <Image src="/brand/mark.png" width="48" height="84" alt='brandMark'/>
           </StyledLogoContainer>
           <StyledSection>
             Najlepszym wyborem jest konsultacja z wykwalifikowaną stylistką, która odpowiednio
