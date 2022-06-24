@@ -1,19 +1,15 @@
-import styled from 'styled-components';
-import Link from 'next/link';
-import Image from 'next/image';
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 import {
-  StyledArticle,
+  PageContainer, StyledArticle,
   StyledHeader,
   StyledLink,
   StyledLinkContainer,
   StyledLogoContainer,
-  StyledSection,
-  StyledStep,
-  StyledSectionHeader,
-  PageContainer,
+  StyledSection, StyledSectionHeader, StyledStep
 } from '../styles/index';
 
 function LiftingRzes() {
@@ -52,7 +48,7 @@ function LiftingRzes() {
           <StyledSection>
             Koloryzacja. Rzęsa naturalna jest zwykle jaśniejsza na końcach niż u nasady dlatego
             trwała koloryzacja jest nieodłącznym elementem liftingu. Farbka InLei działa na rzęsę
-            inaczej niż "zwykła henna rzęs". Jest to innowacyjny produkt działający na zasadzie
+            inaczej niż &quot;zwykła henna rzęs&quot;. Jest to innowacyjny produkt działający na zasadzie
             dekoloryzacji-koloryzacji. Tylko takie działanie gwarantuje utrzymanie koloru tak długo,
             ile trwa naturalny cykl życia rzęsy, czyli aż rzęsa po prostu sama nie wypadnie – mniej
             więcej półtora miesiąca. I jeszcze ten przyjemny zapach!
@@ -68,7 +64,7 @@ function LiftingRzes() {
           </StyledSection>
         </StyledArticle>
         <StyledLogoContainer>
-          <Image src="/brand/mark.png" width="48" height="84" />
+          <Image src="/brand/mark.png" width="48" height="84" alt='brandImage'/>
         </StyledLogoContainer>
         <StyledLinkContainer>
           <Link href="/przedluzanie-rzes" passHref>
