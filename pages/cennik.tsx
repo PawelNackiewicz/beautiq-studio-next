@@ -91,7 +91,7 @@ function Cennik() {
               <td>210 zł</td>
             </tr>
             <tr>
-              <td>Lifting rzęs</td>
+              <td>Lifting/Laminacja rzęs</td>
               <td>160zł</td>
               <td />
             </tr>
@@ -99,6 +99,40 @@ function Cennik() {
               <td>Ściągnięcie rzęs</td>
               <td>30zł</td>
               <td />
+            </tr>
+          </tbody>
+        </StyledTable>
+        <StyledOfferName>Makijaż permanentny</StyledOfferName>
+        <StyledTable>
+          <tbody>
+            <tr>
+              <td>Makijaż permanentny brwi</td>
+              <td>900 zł</td>
+            </tr>
+          </tbody>
+        </StyledTable>
+        <StyledOfferName>Kosmetologia pielęgnacyjna</StyledOfferName>
+        <StyledTable>
+          <tbody>
+            <tr>
+              <td>Mezoterapia Igłowa</td>
+              <td>400-800zł</td>
+            </tr>
+            <tr>
+              <td>Terapia Estgen + mezoterapia mikroigłowa</td>
+              <td>310 zł</td>
+            </tr>
+            <tr>
+              <td>Biorepeel Cl3</td>
+              <td>250 zł</td>
+            </tr>
+            <tr>
+              <td>Biorepeel Cl3 + mezoterapia mikroigłowa</td>
+              <td>360 zł</td>
+            </tr>
+            <tr>
+              <td>Terapia Estgen</td>
+              <td>200 zł</td>
             </tr>
           </tbody>
         </StyledTable>
@@ -116,27 +150,6 @@ function Cennik() {
             <tr>
               <td>Męska naturalna stylizacja brwi</td>
               <td>50 zł</td>
-            </tr>
-          </tbody>
-        </StyledTable>
-        <StyledOfferName>Kosmetologia pielęgnacyjna</StyledOfferName>
-        <StyledTable>
-          <tbody>
-            <tr>
-              <td>Terapia Estgen</td>
-              <td>200 zł</td>
-            </tr>
-            <tr>
-              <td>Terapia Estgen + mezoterapia mikroigłowa</td>
-              <td>310 zł</td>
-            </tr>
-            <tr>
-              <td>Biorepeel Cl3</td>
-              <td>250 zł</td>
-            </tr>
-            <tr>
-              <td>Biorepeel Cl3 + mezoterapia mikroigłowa</td>
-              <td>360 zł</td>
             </tr>
           </tbody>
         </StyledTable>
