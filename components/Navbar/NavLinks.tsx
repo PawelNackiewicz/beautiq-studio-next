@@ -151,6 +151,11 @@ const NavbarLinks = ({ setNavigationOpen }: NavbarLinksProps) => {
 
   return (
     <StyledList>
+      <NavItem>
+        <Link href="/makijaz-permanentny" passHref>
+          <NavItemLink onClick={() => setNavigationOpen(false)}>Makijaż Permanentny</NavItemLink>
+        </Link>
+      </NavItem>
       <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
         <NavItemButoon>RZĘSY</NavItemButoon>
         {dropdown && <Dropdown setNavigationOpen={setNavigationOpen} />}

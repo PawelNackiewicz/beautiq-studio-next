@@ -53,7 +53,9 @@ function NataliaGolomb() {
             województwie opolskim.
           </StyledSection>
           <StyledSection>
-            Jako instruktor prowadzę szkolenia z wszystkich metod stylizacji rzęs.
+            Jako instruktor prowadzę szkolenia z wszystkich metod stylizacji rzęs. Jestem również
+            linergistką. Co to znaczy? Zajmuję się makijażem permanentnym brwi. PMU to już wisienka
+            na torcie moich usług.
           </StyledSection>
           <StyledSection>
             Dlaczego tak bardzo pokochałam oprawę oka? Potrafi ona odmienić nasze spojrzenia,
